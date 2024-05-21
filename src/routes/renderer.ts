@@ -4,11 +4,10 @@ import blockStateData from '../data/renderer/block_states.json'
 import blockModelData from '../data/renderer/block_models.json'
 import textureAtlasData from '../data/renderer/atlas.json'
 import blockRenderTypeData from '../data/renderer/render-type-data.json'
-import blockOcclusionShapeData from '../data/renderer/occlusion-shape-data.json'
+import blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
 import fastIndexData from '../data/renderer/fast-index.json'
 import specialBlocksData from '../data/renderer/special.json'
-import liquidComputationData from '../data/renderer/liquid-computation-data.json'
-import { isKeyObject } from 'util/types'
+import liquidComputationData from '../data/renderer/block_liquid_computation.json'
 
 const bodySchema = z.object({
   definitions: z.record(z.string()),
