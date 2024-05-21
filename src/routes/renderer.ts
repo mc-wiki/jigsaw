@@ -1,13 +1,14 @@
 import { z } from 'zod'
 import { defineEventHandler, readValidatedBody } from 'h3'
-import blockStateData from '../data/renderer/state-data.json'
-import blockModelData from '../data/renderer/model-data.json'
-import textureAtlasData from '../data/renderer/texture-atlas-data.json'
+import blockStateData from '../data/renderer/block_states.json'
+import blockModelData from '../data/renderer/block_models.json'
+import textureAtlasData from '../data/renderer/atlas.json'
 import blockRenderTypeData from '../data/renderer/render-type-data.json'
 import blockOcclusionShapeData from '../data/renderer/occlusion-shape-data.json'
 import fastIndexData from '../data/renderer/fast-index.json'
-import specialBlocksData from '../data/renderer/special-data.json'
+import specialBlocksData from '../data/renderer/special.json'
 import liquidComputationData from '../data/renderer/liquid-computation-data.json'
+import { isKeyObject } from 'util/types'
 
 const bodySchema = z.object({
   definitions: z.record(z.string()),
@@ -18,11 +19,11 @@ const handler = defineEventHandler(async (event) => {
 
   const foundBlocks: string[] = []
   const foundBlockRenderType: Record<string, string> = {}
-  const foundBlockStates: Record<string, string> = {}
-  const foundBlockModel: Record<string, string> = {}
-  const foundTextureAtlas: Record<string, string> = {}
+  const foundBlockStates: Record<string, any> = {}
+  const foundBlockModel: Record<string, any> = {}
+  const foundTextureAtlas: Record<string, any> = {}
   const foundOcclusionShape: Record<string, string[] | null> = {}
-  const foundSpecialBlocksData: Record<string, string> = {}
+  const foundSpecialBlocksData: Record<string, number[]> = {}
   const foundLiquidComputationData: Record<string, string[] | null> = {}
 
   for (let [k, v] of Object.entries(body.definitions)) {
@@ -67,7 +68,9 @@ const handler = defineEventHandler(async (event) => {
           let fastIndex = fastIndexData['water']
           if (fastIndex === null) {
             for (const textureAtlasKey of fastIndex[2]) {
-              foundTextureAtlas[textureAtlasKey] = textureAtlasData[textureAtlasKey]
+              if (keyInObject(textureAtlasKey, textureAtlasData)) {
+                foundTextureAtlas[textureAtlasKey] = textureAtlasData[textureAtlasKey]
+              }
             }
           }
         }
@@ -84,7 +87,9 @@ const handler = defineEventHandler(async (event) => {
         let fastIndex = fastIndexData['water']
         if (fastIndex === null) {
           for (let textureAtlasKey of fastIndex[2]) {
-            foundTextureAtlas[textureAtlasKey] = textureAtlasData[textureAtlasKey]
+            if (keyInObject(textureAtlasKey, textureAtlasData)) {
+              foundTextureAtlas[textureAtlasKey] = textureAtlasData[textureAtlasKey]
+            }
           }
         }
       }
@@ -106,23 +111,25 @@ const handler = defineEventHandler(async (event) => {
       foundBlockRenderType[block] = renderType
     }
 
-    let speicalData = specialBlocksData[block]
-    if (speicalData === null) {
-      foundSpecialBlocksData[block] = speicalData
+    if (keyInObject(block, specialBlocksData)) {
+      foundSpecialBlocksData[block] = specialBlocksData[block]
     }
 
-    let blockState = blockStateData[block]
-    if (blockState === null) {
+    if (keyInObject(block, blockStateData)) {
       foundBlockStates[block] = blockStateData[block]
     }
 
     let fastIndex = fastIndexData[block]
     if (fastIndex === null) {
       for (const modelKey of fastIndex[1]) {
-        foundBlockModel[modelKey] = blockModelData[modelKey]
+        if (keyInObject(modelKey, blockModelData)) {
+          foundBlockModel[modelKey] = blockModelData[modelKey]
+        }
       }
       for (const textureAtlasKey of fastIndex[2]) {
-        foundTextureAtlas[textureAtlasKey] = textureAtlasData[textureAtlasKey]
+        if (keyInObject(textureAtlasKey, textureAtlasData)) {
+          foundTextureAtlas[textureAtlasKey] = textureAtlasData[textureAtlasKey]
+        }
       }
     }
 
@@ -168,3 +175,7 @@ const handler = defineEventHandler(async (event) => {
 })
 
 export default handler
+
+function keyInObject<T extends {}>(key: any, obj: T): key is keyof typeof obj {
+  return Object.keys(obj).includes(key)
+}
