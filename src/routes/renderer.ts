@@ -23,7 +23,7 @@ const handler = defineEventHandler(async (event) => {
   const foundTextureAtlas: Record<string, any> = {}
   const foundOcclusionShape: Record<string, string[] | null> = {}
   const foundSpecialBlocksData: Record<string, number[]> = {}
-  const foundLiquidComputationData: Record<string, string[] | null> = {}
+  const foundLiquidComputationData: Record<string, any> = {}
 
   for (let [k, v] of Object.entries(body.definitions)) {
     // Split tint data
@@ -147,18 +147,8 @@ const handler = defineEventHandler(async (event) => {
       }
     }
 
-    for (const [liquidComputation, blockStateList] of Object.entries(liquidComputationData)) {
-      let liquidComputationThis = null
-      for (const blockStateToCheck of blockStateList) {
-        if (searchKey == blockStateToCheck) {
-          liquidComputationThis = liquidComputation
-          break
-        }
-      }
-      if (liquidComputationThis === null) {
-        foundLiquidComputationData[k] = liquidComputationThis
-        break
-      }
+    if (keyInObject(block, liquidComputationData)) {
+      foundLiquidComputationData[k] = liquidComputationData[block]
     }
   }
 
