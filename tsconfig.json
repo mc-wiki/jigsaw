@@ -1,6 +1,6 @@
 {
   "extends": "@tsconfig/node20/tsconfig.json",
-  "include": ["src/**/*", "eslint.config.js"],
+  "include": ["src/**/*"],
   "compilerOptions": {
     "types": ["node"],
     "resolveJsonModule": true

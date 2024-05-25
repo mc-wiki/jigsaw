@@ -1,4 +1,5 @@
 import { createApp, createRouter, defineEventHandler } from 'h3'
+import renderer from './routes/renderer'
 
 export const app = createApp()
 
@@ -12,9 +13,4 @@ router.get(
   }),
 )
 
-router.post(
-  '/blockStructureRenderer',
-  defineEventHandler((event) => {
-    return { message: '⚡️ Tadaa!' }
-  }),
-)
+router.post('/renderer', renderer)
