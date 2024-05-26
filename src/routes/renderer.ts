@@ -12,7 +12,7 @@ import liquidComputationData from '../data/renderer/block_liquid_computation.jso
 
 const app = new Hono()
 
-const bodySchema = z.object({
+const jsonSchema = z.object({
   definitions: z.record(z.string()),
 })
 
@@ -114,7 +114,7 @@ export interface LiquidComputationData {
   face_sturdy: string[]
 }
 
-app.post('/', zValidator('json', bodySchema), (ctx) => {
+app.post('/', zValidator('json', jsonSchema), (ctx) => {
   const body = ctx.req.valid('json')
 
   const foundBlocks: string[] = []
