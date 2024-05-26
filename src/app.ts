@@ -8,7 +8,7 @@ app.use(router)
 
 router.get(
   '/',
-  defineEventHandler((event) => {
+  defineEventHandler(() => {
     return { message: '🎉 Hello, World!' }
   }),
 )

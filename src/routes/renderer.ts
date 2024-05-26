@@ -3,7 +3,7 @@ import { defineEventHandler, readValidatedBody } from 'h3'
 import blockStateData from '../data/renderer/block_states.json'
 import blockModelData from '../data/renderer/block_models.json'
 import textureAtlasData from '../data/renderer/atlas.json'
-// import blockRenderTypeData from '../data/renderer/render-type-data.json'
+import blockRenderTypeData from '../data/renderer/block_render_type.json'
 import blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
 import specialBlocksData from '../data/renderer/special.json'
 import liquidComputationData from '../data/renderer/block_liquid_computation.json'
@@ -123,7 +123,6 @@ const handler = defineEventHandler(async (event) => {
   const foundLiquidComputationData: Record<string, LiquidComputationData> = {}
 
   for (const [k, v] of Object.entries(body.definitions)) {
-    console.log(k, v)
     const modelKey = new Set<string>()
     const atlasKey = new Set<string>()
     // Split tint data
@@ -187,9 +186,9 @@ const handler = defineEventHandler(async (event) => {
 
     foundBlocks.push(k + '=' + resolvedBlockState)
 
-    // if (keyInObject(block, blockRenderTypeData)) {
-    //   foundBlockRenderType[block] = blockRenderTypeData[block]
-    // }
+    if (keyInObject(block, blockRenderTypeData)) {
+      foundBlockRenderType[block] = blockRenderTypeData[block]
+    }
 
     if (keyInObject(block, specialBlocksData)) {
       foundSpecialBlocksData[block] = specialBlocksData[block]
@@ -238,16 +237,6 @@ const handler = defineEventHandler(async (event) => {
     if (keyInObject(block, liquidComputationData)) {
       foundLiquidComputationData[k] = liquidComputationData[block]
     }
-
-    console.log({
-      blockStates: foundBlockStates,
-      blockModel: foundBlockModel,
-      textureAtlas: foundTextureAtlas,
-      blockRenderType: foundBlockRenderType,
-      occlusionShape: foundOcclusionShape,
-      specialBlocksData: foundSpecialBlocksData,
-      liquidComputationData: foundLiquidComputationData,
-    })
   }
 
   return {
