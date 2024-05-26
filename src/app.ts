@@ -1,16 +1,19 @@
-import { createApp, createRouter, defineEventHandler } from 'h3'
-import renderer from './routes/renderer'
+import { Hono } from 'hono'
+import { env } from 'hono/adapter'
+import { prettyJSON } from 'hono/pretty-json'
 
-export const app = createApp()
+import renderer from './routes/renderer.js'
 
-const router = createRouter()
-app.use(router)
+const app = new Hono()
 
-router.get(
-  '/',
-  defineEventHandler(() => {
-    return { message: '🎉 Hello, World!' }
-  }),
-)
+app.use(prettyJSON())
+app.use(async (c, next) => {
+  const { SERVER } = env<{ SERVER: string }>(c)
+  c.res.headers.set('Server', `${SERVER ?? 'Unknown'} (Hono)`)
+  await next()
+})
 
-router.post('/renderer', renderer)
+app.get('/', (c) => c.json({ message: '🎉 Hello, World!' }))
+app.route('/renderer', renderer)
+
+export default app

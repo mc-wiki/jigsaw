@@ -1,9 +1,7 @@
-import { createServer } from 'node:http'
-import { toNodeListener } from 'h3'
-import { app } from './app'
+import 'dotenv/config'
+import { serve } from '@hono/node-server'
+import app from './app.js'
 
-const port = process.env.PORT || 3000
-
-createServer(toNodeListener(app)).listen(port)
-
-console.log(`Server listening on port ${port}`)
+serve(app, (info) => {
+  console.log(`Server is running on http://localhost:${info.port}`)
+})

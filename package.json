@@ -1,10 +1,15 @@
 {
+  "type": "module",
   "scripts": {
-    "start": "listhen -w ./src/app.ts"
+    "start": "tsx ./src/node.ts",
+    "dev": "tsx watch ./src/node.ts"
   },
   "dependencies": {
-    "h3": "^1.11.1",
+    "@hono/node-server": "^1.11.1",
+    "@hono/zod-validator": "^0.2.1",
+    "hono": "^4.3.11",
     "listhen": "^1.7.2",
+    "tsx": "^4.10.5",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -14,7 +19,6 @@
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "tsx": "^4.10.5",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.9.0"
   }

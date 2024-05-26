@@ -1,5 +1,7 @@
+import { Hono } from 'hono'
+import { zValidator } from '@hono/zod-validator'
 import { z } from 'zod'
-import { defineEventHandler, readValidatedBody } from 'h3'
+
 import blockStateData from '../data/renderer/block_states.json'
 import blockModelData from '../data/renderer/block_models.json'
 import textureAtlasData from '../data/renderer/atlas.json'
@@ -7,6 +9,8 @@ import blockRenderTypeData from '../data/renderer/block_render_type.json'
 import blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
 import specialBlocksData from '../data/renderer/special.json'
 import liquidComputationData from '../data/renderer/block_liquid_computation.json'
+
+const app = new Hono()
 
 const bodySchema = z.object({
   definitions: z.record(z.string()),
@@ -110,8 +114,8 @@ export interface LiquidComputationData {
   face_sturdy: string[]
 }
 
-const handler = defineEventHandler(async (event) => {
-  const body = await readValidatedBody(event, (data: unknown) => bodySchema.parse(data))
+app.post('/', zValidator('json', bodySchema), (ctx) => {
+  const body = ctx.req.valid('json')
 
   const foundBlocks: string[] = []
   const foundBlockRenderType: Record<string, string> = {}
@@ -239,7 +243,7 @@ const handler = defineEventHandler(async (event) => {
     }
   }
 
-  return {
+  return ctx.json({
     blockStates: foundBlockStates,
     blockModel: foundBlockModel,
     textureAtlas: foundTextureAtlas,
@@ -247,10 +251,8 @@ const handler = defineEventHandler(async (event) => {
     occlusionShape: foundOcclusionShape,
     specialBlocksData: foundSpecialBlocksData,
     liquidComputationData: foundLiquidComputationData,
-  }
+  })
 })
-
-export default handler
 
 function keyInObject<T extends object>(
   key: string | number | symbol,
@@ -283,3 +285,5 @@ function getModelForBlock(blockState?: BlockStateModelCollection) {
 
   return modelKey
 }
+
+export default app

@@ -8,12 +8,21 @@ importers:
 
   .:
     dependencies:
-      h3:
+      '@hono/node-server':
         specifier: ^1.11.1
         version: 1.11.1
+      '@hono/zod-validator':
+        specifier: ^0.2.1
+        version: 0.2.1(hono@4.3.11)(zod@3.23.8)
+      hono:
+        specifier: ^4.3.11
+        version: 4.3.11
       listhen:
         specifier: ^1.7.2
         version: 1.7.2
+      tsx:
+        specifier: ^4.10.5
+        version: 4.10.5
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -36,9 +45,6 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
-      tsx:
-        specifier: ^4.10.5
-        version: 4.10.5
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -207,6 +213,16 @@ packages:
   '@eslint/js@9.3.0':
     resolution: {integrity: sha512-niBqk8iwv96+yuTwjM6bWg8ovzAPF9qkICsGtcoa5/dmqcEMfdwNAX7+/OHcJHc7wj7XqPxH98oAHytFYlw6Sw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@hono/node-server@1.11.1':
+    resolution: {integrity: sha512-GW1Iomhmm1o4Z+X57xGby8A35Cu9UZLL7pSMdqDBkD99U5cywff8F+8hLk5aBTzNubnsFAvWQ/fZjNwPsEn9lA==}
+    engines: {node: '>=18.14.1'}
+
+  '@hono/zod-validator@0.2.1':
+    resolution: {integrity: sha512-HFoxln7Q6JsE64qz2WBS28SD33UB2alp3aRKmcWnNLDzEL1BLsWfbdX6e1HIiUprHYTIXf5y7ax8eYidKUwyaA==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.19.1
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -630,6 +646,10 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  hono@4.3.11:
+    resolution: {integrity: sha512-Hle1uNqJJKkebFkFEEWr3UAElJP922Xy0STfl8c+1PH1q+l6WrmhwAJFS6YH8ZWJY4z46qJtssbyVwwPm3dP5w==}
+    engines: {node: '>=16.0.0'}
 
   http-shutdown@1.2.2:
     resolution: {integrity: sha512-S9wWkJ/VSY9/k4qcjG318bqJNruzE4HySUhFYknwmu6LBP97KLLfwNf+n4V1BHurvFNkSKLFnK/RsuUnRTf9Vw==}
@@ -1101,6 +1121,13 @@ snapshots:
   '@eslint/js@8.57.0': {}
 
   '@eslint/js@9.3.0': {}
+
+  '@hono/node-server@1.11.1': {}
+
+  '@hono/zod-validator@0.2.1(hono@4.3.11)(zod@3.23.8)':
+    dependencies:
+      hono: 4.3.11
+      zod: 3.23.8
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -1583,6 +1610,8 @@ snapshots:
       - uWebSockets.js
 
   has-flag@4.0.0: {}
+
+  hono@4.3.11: {}
 
   http-shutdown@1.2.2: {}
 
