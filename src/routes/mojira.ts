@@ -13,7 +13,7 @@ const querySchema = z.object({
 app.get('/', zValidator('query', querySchema), async (c) => {
   const { search, version } = c.req.valid('query')
 
-  const JQL = `
+  const jql = `
     project in (MC, MCPE)
     AND "Confirmation Status" != Unconfirmed
     AND (
@@ -35,7 +35,12 @@ app.get('/', zValidator('query', querySchema), async (c) => {
     .replace(/\s+/g, ' ')
 
   const req = await fetch(
-    `https://bugs.mojang.com/rest/api/2/search?maxResults=20&fields=summary&jql=${encodeURIComponent(JQL)}`,
+    `https://bugs.mojang.com/rest/api/2/search?maxResults=20&fields=summary&jql=${encodeURIComponent(jql)}`,
+    {
+      headers: {
+        'User-Agent': 'MCWJigsawProxy (+https://github.com/mc-wiki/jigsaw)',
+      },
+    },
   )
 
   return c.json((await req.json()) as JSONValue)
