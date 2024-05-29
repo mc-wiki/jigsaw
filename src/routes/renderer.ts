@@ -12,9 +12,7 @@ import liquidComputationData from '../data/renderer/block_liquid_computation.jso
 
 const app = new Hono()
 
-const jsonSchema = z.object({
-  definitions: z.record(z.string()),
-})
+const querySchema = z.record(z.string())
 
 // Block Model Structure
 
@@ -114,8 +112,8 @@ export interface LiquidComputationData {
   face_sturdy: string[]
 }
 
-app.post('/', zValidator('json', jsonSchema), (ctx) => {
-  const body = ctx.req.valid('json')
+app.get('/', zValidator('query', querySchema), (ctx) => {
+  const query = ctx.req.valid('query')
 
   const foundBlocks: string[] = []
   const foundBlockRenderType: Record<string, string> = {}
@@ -126,7 +124,7 @@ app.post('/', zValidator('json', jsonSchema), (ctx) => {
   const foundSpecialBlocksData: Record<string, number[]> = {}
   const foundLiquidComputationData: Record<string, LiquidComputationData> = {}
 
-  for (const [k, v] of Object.entries(body.definitions)) {
+  for (const [k, v] of Object.entries(query)) {
     const modelKey = new Set<string>()
     const atlasKey = new Set<string>()
     // Split tint data

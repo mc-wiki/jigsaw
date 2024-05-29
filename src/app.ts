@@ -11,6 +11,7 @@ app.use(prettyJSON())
 app.use(async (c, next) => {
   const { SERVER } = env<{ SERVER: string }>(c)
   c.res.headers.set('Server', `${SERVER ?? 'Unknown'} (Hono)`)
+  c.res.headers.set('Access-Control-Allow-Origin', '*')
   await next()
 })
 
