@@ -23,7 +23,7 @@ app.get('/', zValidator('query', querySchema), async (c) => {
         AND affectedVersion = "${version}"
       )
     )
-    AND (summary ~ "${search}")
+    AND ${search}
     ORDER BY
       resolution ASC,
       "Mojang Priority" ASC,
@@ -34,7 +34,7 @@ app.get('/', zValidator('query', querySchema), async (c) => {
     project = MCPE
     AND "Confirmation Status" != Unconfirmed
     AND resolution IS EMPTY
-    AND (summary ~ "${search}")
+    AND ${search}
     ORDER BY
       resolution ASC,
       votes DESC,
