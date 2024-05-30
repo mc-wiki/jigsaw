@@ -8,10 +8,20 @@ import mojira from './routes/mojira.js'
 const app = new Hono()
 
 app.use(prettyJSON())
+
 app.use(async (c, next) => {
   const { SERVER } = env<{ SERVER: string }>(c)
   c.res.headers.set('Server', `${SERVER ?? 'Unknown'} (Hono)`)
-  c.res.headers.set('Access-Control-Allow-Origin', '*')
+  await next()
+})
+
+app.use(async (c, next) => {
+  const origin = c.req.header('Origin')
+  if (origin) {
+    const { hostname } = new URL(origin)
+    if (hostname === 'minecraft.wiki' || hostname.endsWith('.minecraft.wiki'))
+      c.res.headers.set('Access-Control-Allow-Origin', origin)
+  }
   await next()
 })
 
