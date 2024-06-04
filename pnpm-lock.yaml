@@ -14,6 +14,12 @@ importers:
       '@hono/zod-validator':
         specifier: ^0.2.1
         version: 0.2.1(hono@4.3.11)(zod@3.23.8)
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       hono:
         specifier: ^4.3.11
         version: 4.3.11
@@ -30,15 +36,9 @@ importers:
       '@eslint/js':
         specifier: ^9.3.0
         version: 9.3.0
-      '@tsconfig/node20':
-        specifier: ^20.1.4
-        version: 20.1.4
       '@types/node':
         specifier: ^20.12.12
         version: 20.12.12
-      dotenv:
-        specifier: ^16.4.5
-        version: 16.4.5
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
