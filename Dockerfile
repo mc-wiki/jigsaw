@@ -9,7 +9,7 @@
 ARG NODE_VERSION=20
 ARG PNPM_VERSION=9.1.4
 
-FROM node:${NODE_VERSION}-alpine
+FROM node:${NODE_VERSION}-buster-slim
 
 # Use production node environment by default.
 ENV NODE_ENV production
@@ -28,8 +28,6 @@ RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
     --mount=type=cache,target=/root/.local/share/pnpm/store \
     pnpm install --prod --frozen-lockfile
-
-RUN node node_modules/esbuild/install.js
 
 # Run the application as a non-root user.
 USER node
