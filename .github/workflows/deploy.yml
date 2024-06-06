@@ -1,0 +1,52 @@
+name: Deploy to server
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      deployments: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - uses: chrnorm/deployment-action@v2
+        name: Create GitHub deployment
+        id: deployment
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment-url: https://tools.minecraft.wiki/jigsaw/
+          environment: production
+
+      - name: Pull and restart
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.TOOLS_SSH_IP }}
+          username: ${{ secrets.TOOLS_SSH_USER }}
+          key: ${{ secrets.TOOLS_SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/jigsaw
+            git pull
+            pnpm install
+            pm2 restart 0
+
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment-url: https://tools.minecraft.wiki/jigsaw/
+          state: 'success'
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment-url: https://tools.minecraft.wiki/jigsaw/
+          state: 'failure'
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
