@@ -21,8 +21,10 @@ app.use(
     const origin = c.req.header('Origin')
     c.set('vary', ['Origin'])
 
+    console.log('no origin')
     if (origin) {
       const { hostname } = new URL(origin)
+      console.log('hostname: ', hostname)
       if (hostname === 'minecraft.wiki' || hostname.endsWith('.minecraft.wiki'))
         c.res.headers.set('Access-Control-Allow-Origin', origin)
     }
