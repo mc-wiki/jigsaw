@@ -15,6 +15,11 @@ app.use(async (c, next) => {
   await next()
 })
 
+app.use(async (c, next) => {
+  c.res.headers.set('Access-Control-Allow-Origin', '*')
+  await next()
+})
+
 app.get('/', (c) => c.json({ message: '🎉 Hello, World!' }))
 
 app.route('/renderer', renderer)
