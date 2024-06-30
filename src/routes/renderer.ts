@@ -9,6 +9,7 @@ import _blockRenderTypeData from '../data/renderer/block_render_type.json'
 import _blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
 import _specialBlocksData from '../data/renderer/special.json'
 import _liquidComputationData from '../data/renderer/block_liquid_computation.json'
+import { LRUCache } from 'lru-cache'
 
 const blockStateData = _blockStateData as unknown as Record<string, BlockStateModelCollection>
 const blockModelData = _blockModelData as unknown as Record<string, BlockModel>
@@ -244,17 +245,14 @@ const EMPTY_STATE_DATA: StateData = {
   occlusion_shape: {},
   special_textures: [],
 }
-const RESPONSE_CACHE = new Map<string, StateData>()
+
+const RESPONSE_CACHE = new LRUCache<string, StateData, BlockState>({
+  max: 2000,
+  memoMethod: (key, staleValue, options) => makeStateData(options.context),
+})
 
 function findOrMakeData(blockState: BlockState): StateData {
-  const stateString = stateToString(blockState)
-  if (RESPONSE_CACHE.has(stateString)) {
-    return RESPONSE_CACHE.get(stateString)!
-  } else {
-    const data = makeStateData(blockState)
-    RESPONSE_CACHE.set(stateString, data)
-    return data
-  }
+  return RESPONSE_CACHE.memo(stateToString(blockState), { context: blockState })
 }
 
 function makeStateData(blockState: BlockState): StateData {
