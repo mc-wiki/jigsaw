@@ -2,28 +2,98 @@ import { Hono } from 'hono'
 import { zValidator } from '@hono/zod-validator'
 import { z } from 'zod'
 
-import blockStateData from '../data/renderer/block_states.json'
-import blockModelData from '../data/renderer/block_models.json'
-import textureAtlasData from '../data/renderer/atlas.json'
-import blockRenderTypeData from '../data/renderer/block_render_type.json'
-import blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
-import specialBlocksData from '../data/renderer/special.json'
-import liquidComputationData from '../data/renderer/block_liquid_computation.json'
+import _blockStateData from '../data/renderer/block_states.json'
+import _blockModelData from '../data/renderer/block_models.json'
+import _textureAtlasData from '../data/renderer/atlas.json'
+import _blockRenderTypeData from '../data/renderer/block_render_type.json'
+import _blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
+import _specialBlocksData from '../data/renderer/special.json'
+import _liquidComputationData from '../data/renderer/block_liquid_computation.json'
+
+const blockStateData = _blockStateData as unknown as Record<string, BlockStateModelCollection>
+const blockModelData = _blockModelData as unknown as Record<string, BlockModel>
+const textureAtlasData = _textureAtlasData as unknown as Record<string, AnimatedTexture | number[]>
+const blockRenderTypeData = _blockRenderTypeData as unknown as Record<string, string>
+const blockOcclusionShapeData = _blockOcclusionShapeData as unknown as Record<
+  string,
+  OcclusionFaceData
+>
+const specialBlocksData = _specialBlocksData as unknown as Record<string, number[]>
+const liquidComputationData = _liquidComputationData as unknown as Record<
+  string,
+  LiquidComputationData
+>
 
 const app = new Hono()
 
-const querySchema = z.record(z.string())
+// Query Schema ------------------------------------------------------------------------------------
 
-// Block Model Structure
+const BlockState = z.object({
+  name: z.string(),
+  properties: z.record(z.string()).optional(),
+})
+type BlockState = z.infer<typeof BlockState>
 
-export interface BlockModel {
+const querySchema = z.array(BlockState)
+
+// Data Definitions --------------------------------------------------------------------------------
+
+interface BlockStateModelCollection {
+  variants?: Record<string, ModelReference | ModelReferenceWithWeight[]>
+  multipart?: ConditionalPart[]
+}
+
+interface ModelReference {
+  model: number
+  uvlock?: boolean
+  x?: number
+  y?: number
+}
+
+interface ModelReferenceWithWeight {
+  model: number
+  uvlock?: boolean
+  x?: number
+  y?: number
+  weight?: number
+}
+
+interface ConditionalPart {
+  apply: ModelReference | ModelReferenceWithWeight[]
+  when?: Record<string, string> | AndCondition | OrCondition
+}
+
+interface AndCondition {
+  AND: (Record<string, string> | AndCondition | OrCondition)[]
+}
+
+interface OrCondition {
+  OR: (Record<string, string> | AndCondition | OrCondition)[]
+}
+
+interface OcclusionFaceData {
+  down?: number[][]
+  up?: number[][]
+  north?: number[][]
+  south?: number[][]
+  west?: number[][]
+  east?: number[][]
+  can_occlude: boolean
+}
+
+interface LiquidComputationData {
+  blocks_motion: boolean
+  face_sturdy: string[]
+}
+
+interface BlockModel {
   elements?: ModelElement[]
 }
 
-export interface ModelElement {
+interface ModelElement {
   from: number[]
   to: number[]
-  rotation?: ModelRotation
+  rotation?: never
   shade?: boolean
   faces: {
     down?: ModelFace
@@ -35,7 +105,7 @@ export interface ModelElement {
   }
 }
 
-export interface ModelFace {
+interface ModelFace {
   texture: number
   uv?: number[]
   rotation?: number
@@ -43,245 +113,250 @@ export interface ModelFace {
   cullface?: string
 }
 
-// Block State Structure
-
-export interface ModelRotation {
-  origin: number[]
-  axis: 'x' | 'y' | 'z' | string
-  angle: number
-  rescale?: boolean
-}
-
-export interface BlockStateModelCollection {
-  variants?: Record<string, ModelReference | ModelReferenceWithWeight[]>
-  multipart?: ConditionalPart[]
-}
-
-export interface ModelReference {
-  model: number
-  uvlock?: boolean
-  x?: number
-  y?: number
-}
-
-export interface ModelReferenceWithWeight {
-  model: number
-  uvlock?: boolean
-  x?: number
-  y?: number
-  weight?: number
-}
-
-export interface ConditionalPart {
-  apply: ModelReference | ModelReferenceWithWeight[]
-  when?: Record<string, unknown> | AndCondition | OrCondition
-}
-
-export interface AndCondition {
-  AND: (Record<string, unknown> | AndCondition | OrCondition)[]
-}
-
-export interface OrCondition {
-  OR: (Record<string, unknown> | AndCondition | OrCondition)[]
-}
-
-// Block Texture Structure
-
-export interface AnimatedTexture {
+interface AnimatedTexture {
   frames: number[]
   time: number[]
   interpolate?: boolean
 }
 
-// Occlusion Face Structure
+// Model Selection Algorithm -----------------------------------------------------------------------
 
-export interface OcclusionFaceData {
-  down?: number[][]
-  up?: number[][]
-  north?: number[][]
-  south?: number[][]
-  west?: number[][]
-  east?: number[][]
-  can_occlude: boolean
+function conditionMatch(
+  condition: Record<string, string> | AndCondition | OrCondition,
+  blockProperties: Record<string, string>,
+): boolean {
+  if ('AND' in condition) {
+    return (condition as AndCondition).AND.every(
+      (part: Record<string, string> | AndCondition | OrCondition) =>
+        conditionMatch(part, blockProperties),
+    )
+  } else if ('OR' in condition) {
+    return (condition as OrCondition).OR.some(
+      (part: Record<string, string> | AndCondition | OrCondition) =>
+        conditionMatch(part, blockProperties),
+    )
+  } else {
+    return Object.entries(condition).every(([key, value]) => {
+      const reversed = value.startsWith('!')
+      if (reversed) value = value.slice(1)
+      return value.split('|').includes(blockProperties[key]) !== reversed
+    })
+  }
 }
 
-// Liquid Computation Data
+function chooseModel(
+  blockState: BlockState,
+): (ModelReference | ModelReferenceWithWeight[])[] | null {
+  const modelCollection = blockStateData[blockState.name]
 
-export interface LiquidComputationData {
-  blocks_motion: boolean
+  if (!modelCollection) return null
+  if (!modelCollection.variants && !modelCollection.multipart) return null
+
+  const blockProperties = blockState.properties ?? {}
+  if (modelCollection.variants) {
+    for (const [key, value] of Object.entries(modelCollection.variants)) {
+      const stateCondition = key.split(',')
+      let match = true
+      for (const condition of stateCondition) {
+        const [key, value] = condition.split('=')
+        if (blockProperties[key] !== value) {
+          match = false
+          break
+        }
+      }
+      if (match) return [value]
+    }
+  } else {
+    const matchingPart = modelCollection.multipart!.filter((part) =>
+      conditionMatch(part.when ?? {}, blockProperties),
+    )
+    if (matchingPart.length === 0) return null
+    return matchingPart.map((part) => part.apply)
+  }
+
+  return null
+}
+
+// Response Scheme ---------------------------------------------------------------------------------
+
+interface StateData {
+  parts: (ModelReference | ModelReferenceWithWeight[])[]
+  models: number[]
+  textures: number[]
+  render_type: string
   face_sturdy: string[]
+  blocks_motion: boolean
+  occlusion: boolean
+  occlusion_shape: Record<string, number[][]>
+  special_textures: number[]
 }
 
-app.get('/', zValidator('query', querySchema), (ctx) => {
-  const query = ctx.req.valid('query')
+interface ResponseSchema {
+  states: {
+    state: BlockState
+    parts: (ModelReference | ModelReferenceWithWeight[])[]
+    render_type: string
+    face_sturdy: string[]
+    blocks_motion: boolean
+    occlusion: boolean
+    occlusion_shape: Record<string, number[][]>
+    special_textures: number[]
+  }[]
+  models: Record<string, BlockModel>
+  textures: Record<string, AnimatedTexture | number[]>
+}
 
-  const foundBlocks: string[] = []
-  const foundBlockRenderType: Record<string, string> = {}
-  const foundBlockStates: Record<string, BlockStateModelCollection> = {}
-  const foundBlockModel: Record<string, BlockModel> = {}
-  const foundTextureAtlas: Record<string, AnimatedTexture | number[]> = {}
-  const foundOcclusionShape: Record<string, string | null> = {}
-  const foundSpecialBlocksData: Record<string, number[]> = {}
-  const foundLiquidComputationData: Record<string, LiquidComputationData> = {}
+function stateToString(blockState: BlockState): string {
+  if (blockState.properties) {
+    return `${blockState.name}[${Object.entries(blockState.properties)
+      .sort(([key1], [key2]) => key1.localeCompare(key2))
+      .map(([key, value]) => `${key}=${value}`)
+      .join(',')}]`
+  } else {
+    return blockState.name
+  }
+}
 
-  for (const [k, v] of Object.entries(query)) {
-    const modelKey = new Set<string>()
-    const atlasKey = new Set<string>()
-    // Split tint data
-    const tintDataSplitPoint = v.indexOf('!')
-    let tint: string | null = null
-    let unresolvedBlockState: string
+function stateToStringFilteredWaterLogged(blockState: BlockState): string {
+  const filtered = Object.entries(blockState.properties ?? {}).filter(
+    ([key]) => key !== 'waterlogged',
+  )
+  if (filtered.length > 0) {
+    return `${blockState.name}[${filtered
+      .sort(([key1], [key2]) => key1.localeCompare(key2))
+      .map(([key, value]) => `${key}=${value}`)
+      .join(',')}]`
+  } else {
+    return blockState.name
+  }
+}
 
-    if (tintDataSplitPoint !== -1) {
-      tint = v.substring(tintDataSplitPoint + 1)
-      unresolvedBlockState = v.substring(0, tintDataSplitPoint - 1)
-    } else {
-      unresolvedBlockState = v
-    }
+// Cache -------------------------------------------------------------------------------------------
 
-    // Sort block properties
-    const splitPoint = unresolvedBlockState.indexOf('[')
-    let block: string
-    let state
-    let nonWaterLoggedState
-    if (splitPoint !== -1) {
-      block = unresolvedBlockState.substring(0, splitPoint - 1)
-      const stateList = unresolvedBlockState.substring(splitPoint + 1, -2).split(',')
-      const unsortedStateMap: Record<string, string> = {}
-      const stateNameList: string[] = []
-      for (const state of stateList) {
-        const splitNamePoint = state.indexOf('=')
-        const stateName = state.substring(0, splitNamePoint - 1)
-        const stateValue = state.substring(splitNamePoint + 1)
-        unsortedStateMap[stateName] = stateValue
-        stateNameList.push(stateName)
-      }
-      stateNameList.sort()
-      const sortedStateList: string[] = []
-      const sortedStateListNonWaterLogged: string[] = []
-      for (const stateName of stateNameList) {
-        sortedStateList.push(stateName + '=' + unsortedStateMap[stateName])
-        if (stateName === 'waterlogged')
-          sortedStateListNonWaterLogged.push(stateName + '=' + unsortedStateMap[stateName])
-        else {
-          foundSpecialBlocksData['water'] = specialBlocksData['water']
-          specialBlocksData.water.forEach((texture) => atlasKey.add(texture.toString()))
+const EMPTY_STATE_DATA: StateData = {
+  parts: [],
+  models: [],
+  textures: [],
+  render_type: 'solid',
+  face_sturdy: [],
+  blocks_motion: false,
+  occlusion: false,
+  occlusion_shape: {},
+  special_textures: [],
+}
+const RESPONSE_CACHE = new Map<string, StateData>()
+
+function findOrMakeData(blockState: BlockState): StateData {
+  const stateString = stateToString(blockState)
+  if (RESPONSE_CACHE.has(stateString)) {
+    return RESPONSE_CACHE.get(stateString)!
+  } else {
+    const data = makeStateData(blockState)
+    RESPONSE_CACHE.set(stateString, data)
+    return data
+  }
+}
+
+function makeStateData(blockState: BlockState): StateData {
+  const stateString = stateToStringFilteredWaterLogged(blockState)
+  const stateName = blockState.name
+
+  const parts = chooseModel(blockState)
+  const specials = specialBlocksData[stateName]
+  const occlusionShape = blockOcclusionShapeData[stateString] ?? { can_occlude: false }
+  const liquidComputation = liquidComputationData[stateString] ?? {
+    blocks_motion: false,
+    face_sturdy: [],
+  }
+
+  if (!parts && !specials && !occlusionShape.can_occlude && !liquidComputation.blocks_motion)
+    return EMPTY_STATE_DATA
+
+  const models = new Set<number>()
+  if (parts) {
+    for (const part of parts) {
+      if (Array.isArray(part)) {
+        for (const model of part) {
+          models.add(model.model)
         }
+      } else {
+        models.add(part.model)
       }
-      state = '[' + sortedStateList.join(',') + ']'
-      nonWaterLoggedState = '[' + sortedStateListNonWaterLogged.join(',') + ']'
-    } else {
-      if (
-        unresolvedBlockState == 'seagrass' ||
-        unresolvedBlockState == 'kelp' ||
-        unresolvedBlockState == 'bubble_column'
-      ) {
-        foundSpecialBlocksData['water'] = specialBlocksData['water']
-        specialBlocksData.water.forEach((texture) => atlasKey.add(texture.toString()))
-      }
-      block = unresolvedBlockState
-      state = ''
-      nonWaterLoggedState = ''
-    }
-
-    const resolvedBlockState = tint !== null ? block + state + '!' + tint : block + state
-
-    foundBlocks.push(k + '=' + resolvedBlockState)
-
-    if (keyInObject(block, blockRenderTypeData)) {
-      foundBlockRenderType[block] = blockRenderTypeData[block]
-    }
-
-    if (keyInObject(block, specialBlocksData)) {
-      foundSpecialBlocksData[block] = specialBlocksData[block]
-    }
-
-    if (keyInObject(block, blockStateData)) {
-      foundBlockStates[block] = blockStateData[block]
-    }
-
-    getModelForBlock(foundBlockStates[block]).forEach((value) => modelKey.add(value))
-
-    for (const key of modelKey) {
-      if (keyInObject(key, blockModelData)) {
-        foundBlockModel[key] = blockModelData[key]
-        const blockModel: BlockModel = blockModelData[key]
-        if (!blockModel.elements) continue
-
-        for (const element of blockModel.elements) {
-          for (const face of Object.values(element.faces)) {
-            atlasKey.add(face.texture.toString())
-          }
-        }
-      }
-    }
-
-    for (const key of atlasKey) {
-      if (keyInObject(key, textureAtlasData)) {
-        foundTextureAtlas[key] = textureAtlasData[key]
-
-        const atlasData: AnimatedTexture | number[] = textureAtlasData[key]
-
-        if (!(atlasData instanceof Array)) {
-          for (const frame of atlasData.frames) {
-            atlasKey.add(frame.toString())
-          }
-        }
-      }
-    }
-
-    const searchKey = block + nonWaterLoggedState
-
-    if (keyInObject(searchKey, blockOcclusionShapeData)) {
-      foundOcclusionShape[k] = blockOcclusionShapeData[searchKey]
-    }
-
-    if (keyInObject(block, liquidComputationData)) {
-      foundLiquidComputationData[k] = liquidComputationData[block]
     }
   }
 
-  return ctx.json({
-    blockStates: foundBlockStates,
-    blockModel: foundBlockModel,
-    textureAtlas: foundTextureAtlas,
-    blockRenderType: foundBlockRenderType,
-    occlusionShape: foundOcclusionShape,
-    specialBlocksData: foundSpecialBlocksData,
-    liquidComputationData: foundLiquidComputationData,
-  })
+  const textures = new Set<number>()
+  specials?.forEach((val) => textures.add(val))
+  for (const model of models) {
+    const modelData = blockModelData[String(model)]
+    if (modelData) {
+      for (const element of modelData.elements ?? []) {
+        for (const face of Object.values(element.faces)) {
+          textures.add(face.texture)
+        }
+      }
+    }
+  }
+
+  const texturesParsed = new Set<number>()
+  for (const texture of textures) {
+    const textureData = textureAtlasData[String(texture)]
+    if (Array.isArray(textureData)) {
+      texturesParsed.add(texture)
+    } else {
+      textureData.frames.forEach((val) => texturesParsed.add(val))
+    }
+  }
+
+  return {
+    parts: parts ?? [],
+    models: Array.from(models),
+    textures: Array.from(texturesParsed),
+    render_type: blockRenderTypeData[stateName] ?? 'solid',
+    face_sturdy: liquidComputation.face_sturdy,
+    blocks_motion: liquidComputation.blocks_motion,
+    occlusion: occlusionShape.can_occlude,
+    occlusion_shape: {
+      down: occlusionShape.down ?? [],
+      up: occlusionShape.up ?? [],
+      north: occlusionShape.north ?? [],
+      south: occlusionShape.south ?? [],
+      west: occlusionShape.west ?? [],
+      east: occlusionShape.east ?? [],
+    },
+    special_textures: specials ?? [],
+  }
+}
+
+// Routes ------------------------------------------------------------------------------------------
+
+app.post('/', zValidator('json', querySchema), (ctx) => {
+  const query = ctx.req.valid('json')
+  const response = { states: [], textures: {}, models: {} } as ResponseSchema
+  const collectedTextures = new Set<string>()
+  const collectedModels = new Set<string>()
+
+  for (const blockState of query) {
+    const data = findOrMakeData(blockState)
+    response.states.push({
+      state: blockState,
+      parts: data.parts,
+      render_type: data.render_type,
+      face_sturdy: data.face_sturdy,
+      blocks_motion: data.blocks_motion,
+      occlusion: data.occlusion,
+      occlusion_shape: data.occlusion_shape,
+      special_textures: data.special_textures,
+    })
+    data.textures.forEach((texture) => collectedTextures.add(String(texture)))
+    data.special_textures.forEach((texture) => collectedTextures.add(String(texture)))
+    data.models.forEach((model) => collectedModels.add(String(model)))
+  }
+
+  collectedTextures.forEach((tex) => (response.textures[tex] = textureAtlasData[tex]))
+  collectedModels.forEach((model) => (response.models[model] = blockModelData[model]))
+
+  return ctx.json(response)
 })
-
-function keyInObject<T extends object>(
-  key: string | number | symbol,
-  obj: T,
-): key is keyof typeof obj {
-  return key in obj
-}
-
-function getModelForBlock(blockState?: BlockStateModelCollection) {
-  if (blockState === undefined) return new Set<string>()
-  const modelKey = new Set<string>()
-  if (blockState.multipart) {
-    for (const part of blockState.multipart) {
-      if (part.apply instanceof Array) {
-        for (const apply of part.apply) {
-          modelKey.add(apply.model.toString())
-        }
-      } else modelKey.add(part.apply.model.toString())
-    }
-  }
-  if (blockState.variants) {
-    for (const model of Object.values(blockState.variants)) {
-      if (model instanceof Array) {
-        for (const m of model) {
-          modelKey.add(m.model.toString())
-        }
-      } else modelKey.add(model.model.toString())
-    }
-  }
-
-  return modelKey
-}
 
 export default app
