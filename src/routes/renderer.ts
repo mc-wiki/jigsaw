@@ -29,21 +29,15 @@ const app = new Hono()
 
 // Query Schema ------------------------------------------------------------------------------------
 
-interface BlockState {
-  name: string
-  properties: Record<string, string>
-}
+const BlockState = z.object({
+  name: z.string(),
+  properties: z.record(z.string()).optional(),
+})
+type BlockState = z.infer<typeof BlockState>
 
 const querySchema = z.object({
-  states: z
-    .string()
-    .transform((val) =>
-      val
-        .split('|')
-        .map((state) => state.trim())
-        .filter((state) => state.length > 0),
-    )
-    .pipe(z.array(z.string()).nonempty()),
+  states: z.array(BlockState),
+  hash: z.string(),
 })
 
 // Data Definitions --------------------------------------------------------------------------------
@@ -201,7 +195,17 @@ interface StateData {
   special_textures: number[]
 }
 
-interface ResponseSchema {
+interface Response {
+  processed: boolean
+}
+
+interface NotProcessedResponse extends Response {
+  processed: false
+}
+
+const NOT_PROCESSED_RESPONSE: NotProcessedResponse = { processed: false }
+
+interface ProcessedResponse extends Response {
   states: {
     state: BlockState
     parts: (ModelReference | ModelReferenceWithWeight[])[]
@@ -214,25 +218,7 @@ interface ResponseSchema {
   }[]
   models: Record<string, BlockModel>
   textures: Record<string, AnimatedTexture | number[]>
-}
-
-function stringToState(blockState: string): BlockState {
-  const split = blockState.indexOf('[')
-  if (split === -1) return { name: blockState, properties: {} }
-  if (blockState.endsWith(']')) blockState = blockState.slice(0, -1)
-  const name = blockState.slice(0, split)
-  const properties = blockState
-    .slice(split + 1)
-    .split(',')
-    .reduce(
-      (acc, val) => {
-        const [key, value] = val.split('=')
-        acc[key] = value
-        return acc
-      },
-      {} as Record<string, string>,
-    )
-  return { name, properties }
+  processed: true
 }
 
 function stateToString(blockState: BlockState): string {
@@ -274,13 +260,13 @@ const EMPTY_STATE_DATA: StateData = {
   special_textures: [],
 }
 
-const RESPONSE_CACHE = new LRUCache<string, StateData, BlockState>({
+const BLOCK_CACHE = new LRUCache<string, StateData, BlockState>({
   max: 2000,
   memoMethod: (_key, _staleValue, options) => makeStateData(options.context),
 })
 
 function findOrMakeData(blockState: BlockState): StateData {
-  return RESPONSE_CACHE.memo(stateToString(blockState), { context: blockState })
+  return BLOCK_CACHE.memo(stateToString(blockState), { context: blockState })
 }
 
 function makeStateData(blockState: BlockState): StateData {
@@ -355,24 +341,32 @@ function makeStateData(blockState: BlockState): StateData {
   }
 }
 
-// Routes ------------------------------------------------------------------------------------------
-
-app.use(async (c, next) => {
-  c.res.headers.set('Cache-Control', 'public, max-age=86400, s-maxage=604800')
-  await next()
+const RESOLVED_CACHE = new LRUCache<string, ProcessedResponse>({
+  max: 1000,
 })
 
-app.get('/', zValidator('query', querySchema), (ctx) => {
-  const query = ctx.req.valid('query').states
-  const response = { states: [], textures: {}, models: {} } as ResponseSchema
+// Routes ------------------------------------------------------------------------------------------
+
+app.get('/:hash', (ctx) => {
+  const hash = ctx.req.param('hash')
+  const response = RESOLVED_CACHE.get(hash)
+  if (response)
+    return ctx.json(response, 200, {
+      'Cache-Control': 'public, max-age=86400, s-maxage=604800',
+    })
+  return ctx.json(NOT_PROCESSED_RESPONSE, 404)
+})
+
+app.post('/process', zValidator('json', querySchema), (ctx) => {
+  const query = ctx.req.valid('json')
+  const response = { states: [], textures: {}, models: {}, processed: true } as ProcessedResponse
   const collectedTextures = new Set<string>()
   const collectedModels = new Set<string>()
 
-  for (const blockState of query) {
-    const blockStateObj = stringToState(blockState)
-    const data = findOrMakeData(blockStateObj)
+  for (const blockState of query.states) {
+    const data = findOrMakeData(blockState)
     response.states.push({
-      state: blockStateObj,
+      state: blockState,
       parts: data.parts,
       render_type: data.render_type,
       face_sturdy: data.face_sturdy,
@@ -388,6 +382,7 @@ app.get('/', zValidator('query', querySchema), (ctx) => {
 
   collectedTextures.forEach((tex) => (response.textures[tex] = textureAtlasData[tex]))
   collectedModels.forEach((model) => (response.models[model] = blockModelData[model]))
+  RESOLVED_CACHE.set(query.hash, response)
 
   return ctx.json(response)
 })
