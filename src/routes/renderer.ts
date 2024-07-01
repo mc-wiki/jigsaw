@@ -29,13 +29,22 @@ const app = new Hono()
 
 // Query Schema ------------------------------------------------------------------------------------
 
-const BlockState = z.object({
-  name: z.string(),
-  properties: z.record(z.string()).optional(),
-})
-type BlockState = z.infer<typeof BlockState>
+interface BlockState {
+  name: string
+  properties: Record<string, string>
+}
 
-const querySchema = z.array(BlockState)
+const querySchema = z.object({
+  states: z
+    .string()
+    .transform((val) =>
+      val
+        .split('|')
+        .map((state) => state.trim())
+        .filter((state) => state.length > 0),
+    )
+    .pipe(z.array(z.string()).nonempty()),
+})
 
 // Data Definitions --------------------------------------------------------------------------------
 
@@ -207,6 +216,25 @@ interface ResponseSchema {
   textures: Record<string, AnimatedTexture | number[]>
 }
 
+function stringToState(blockState: string): BlockState {
+  const split = blockState.indexOf('[')
+  if (split === -1) return { name: blockState, properties: {} }
+  if (blockState.endsWith(']')) blockState = blockState.slice(0, -1)
+  const name = blockState.slice(0, split)
+  const properties = blockState
+    .slice(split + 1)
+    .split(',')
+    .reduce(
+      (acc, val) => {
+        const [key, value] = val.split('=')
+        acc[key] = value
+        return acc
+      },
+      {} as Record<string, string>,
+    )
+  return { name, properties }
+}
+
 function stateToString(blockState: BlockState): string {
   if (blockState.properties && Object.keys(blockState.properties).length > 0) {
     return `${blockState.name}[${Object.entries(blockState.properties)
@@ -334,16 +362,17 @@ app.use(async (c, next) => {
   await next()
 })
 
-app.post('/', zValidator('json', querySchema), (ctx) => {
-  const query = ctx.req.valid('json')
+app.get('/', zValidator('query', querySchema), (ctx) => {
+  const query = ctx.req.valid('query').states
   const response = { states: [], textures: {}, models: {} } as ResponseSchema
   const collectedTextures = new Set<string>()
   const collectedModels = new Set<string>()
 
   for (const blockState of query) {
-    const data = findOrMakeData(blockState)
+    const blockStateObj = stringToState(blockState)
+    const data = findOrMakeData(blockStateObj)
     response.states.push({
-      state: blockState,
+      state: blockStateObj,
       parts: data.parts,
       render_type: data.render_type,
       face_sturdy: data.face_sturdy,
