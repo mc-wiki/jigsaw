@@ -208,7 +208,7 @@ interface ResponseSchema {
 }
 
 function stateToString(blockState: BlockState): string {
-  if (blockState.properties) {
+  if (blockState.properties && Object.keys(blockState.properties).length > 0) {
     return `${blockState.name}[${Object.entries(blockState.properties)
       .sort(([key1], [key2]) => key1.localeCompare(key2))
       .map(([key, value]) => `${key}=${value}`)
@@ -248,7 +248,7 @@ const EMPTY_STATE_DATA: StateData = {
 
 const RESPONSE_CACHE = new LRUCache<string, StateData, BlockState>({
   max: 2000,
-  memoMethod: (key, staleValue, options) => makeStateData(options.context),
+  memoMethod: (_key, _staleValue, options) => makeStateData(options.context),
 })
 
 function findOrMakeData(blockState: BlockState): StateData {
@@ -302,6 +302,7 @@ function makeStateData(blockState: BlockState): StateData {
     if (Array.isArray(textureData)) {
       texturesParsed.add(texture)
     } else {
+      texturesParsed.add(texture)
       textureData.frames.forEach((val) => texturesParsed.add(val))
     }
   }
@@ -327,6 +328,11 @@ function makeStateData(blockState: BlockState): StateData {
 }
 
 // Routes ------------------------------------------------------------------------------------------
+
+app.use(async (c, next) => {
+  c.res.headers.set('Cache-Control', 'public, max-age=86400, s-maxage=604800')
+  await next()
+})
 
 app.post('/', zValidator('json', querySchema), (ctx) => {
   const query = ctx.req.valid('json')
