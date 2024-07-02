@@ -17,7 +17,7 @@ app.get('/', zValidator('query', querySchema), async (c) => {
   const { jql } = c.req.valid('query')
 
   const req = await fetch(
-    `https://bugs.mojang.com/rest/api/2/search?maxResults=10&fields=summary&jql=${encodeURIComponent(jql)}`,
+    `https://bugs.mojang.com/rest/api/2/search?maxResults=10&fields=summary,resolution&jql=${encodeURIComponent(jql)}`,
     {
       headers: {
         'User-Agent': 'minecraft.wiki API Proxy (dianliang233 at gmail.com)',
