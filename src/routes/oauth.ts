@@ -50,6 +50,7 @@ app.get('/callback', zValidator('query', querySchema), async (c) => {
       maxAge: 60 * 60 * 24 * 120,
       path: '/',
       sameSite: 'None',
+      secure: true,
     },
   )
 
