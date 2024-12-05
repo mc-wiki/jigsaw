@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { env } from 'hono/adapter'
 import { prettyJSON } from 'hono/pretty-json'
+import { cors } from 'hono/cors'
 
 import renderer from './routes/renderer.js'
 import mojira from './routes/mojira.js'
@@ -21,6 +22,15 @@ app.use(async (c, next) => {
   c.res.headers.set('Access-Control-Allow-Origin', '*')
   await next()
 })
+
+app.use(
+  cors({
+    origin: (origin) =>
+      origin.startsWith('https://') && origin.endsWith('.minecraft.wiki')
+        ? origin
+        : 'https://minecraft.wiki',
+  }),
+)
 
 app.get('/', (c) => c.json({ message: '🎉 Hello, World!' }))
 
