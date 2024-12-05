@@ -5,6 +5,7 @@ import { protectedFetch, Tokens } from '../oauth.js'
 import { env } from 'hono/adapter'
 import { getConnInfo } from '@hono/node-server/conninfo'
 import { getCookie, setCookie } from 'hono/cookie'
+import { HTTPException } from 'hono/http-exception'
 
 const app = new Hono()
 
@@ -17,7 +18,7 @@ app.post('/', zValidator('json', bodySchema), async (c) => {
 
   const cookie = getCookie(c, 'jigsawTokens')
   if (!cookie) {
-    return c.json({ message: 'noToken' }, 401)
+    throw new HTTPException(401, { message: 'missingToken' })
   }
   const tokens = JSON.parse(cookie) as Tokens
 

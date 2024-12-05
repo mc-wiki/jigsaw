@@ -1,3 +1,5 @@
+import { HTTPException } from 'hono/http-exception'
+
 export interface Tokens {
   accessToken: string
   refreshToken: string
@@ -18,21 +20,24 @@ export async function protectedFetch(
     tokens.expiresAt = newTokens.expiresAt
   }
 
-  try {
-    return await fetch(url, {
-      ...init,
-      headers: {
-        ...init?.headers,
-        Authorization: `Bearer ${tokens.accessToken}`,
-      },
+  const response = await fetch(url, {
+    ...init,
+    headers: {
+      ...init?.headers,
+      Authorization: `Bearer ${tokens.accessToken}`,
+    },
+  })
+
+  if (response.status === 401 && !forceRefresh) {
+    const newTokens = await refreshTokens(tokens, env)
+    return protectedFetch(url, newTokens, env, init, true)
+  } else if (response.status === 401) {
+    throw new HTTPException(401, {
+      message: 'invalidAccessToken',
     })
-  } catch (e) {
-    if (e instanceof Error && e.message === 'Unauthorized') {
-      return protectedFetch(url, tokens, env, init, true)
-    } else {
-      throw e
-    }
   }
+
+  return response
 }
 
 export async function refreshTokens(
@@ -60,6 +65,13 @@ export async function refreshTokens(
     refresh_token: string
     expires_in: number
     expires_at: number
+  }
+
+  // invalid refresh token
+  if (!newTokens.access_token) {
+    throw new HTTPException(401, {
+      message: 'invalidRefreshToken',
+    })
   }
 
   return {
