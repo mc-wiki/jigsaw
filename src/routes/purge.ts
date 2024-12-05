@@ -80,6 +80,7 @@ app.post('/', zValidator('json', bodySchema), async (c) => {
     maxAge: 60 * 60 * 24 * 120,
     path: '/',
     sameSite: 'None',
+    secure: true,
   })
 
   return c.json({
