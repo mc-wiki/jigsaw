@@ -1,23 +1,25 @@
 import { zValidator } from '@hono/zod-validator'
 import { Hono } from 'hono'
 import { z } from 'zod'
-import { protectedFetch } from '../oauth.js'
+import { protectedFetch, Tokens } from '../oauth.js'
 import { env } from 'hono/adapter'
 import { getConnInfo } from '@hono/node-server/conninfo'
+import { getCookie, setCookie } from 'hono/cookie'
 
 const app = new Hono()
 
 const bodySchema = z.object({
   urls: z.string().url().array(),
-  tokens: z.object({
-    accessToken: z.string().min(1),
-    refreshToken: z.string().min(1),
-    expiresAt: z.number().int().positive(),
-  }),
 })
 
 app.post('/', zValidator('json', bodySchema), async (c) => {
-  const { urls, tokens } = c.req.valid('json')
+  const { urls } = c.req.valid('json')
+
+  const cookie = getCookie(c, 'jigsawTokens')
+  if (!cookie) {
+    return c.json({ message: 'noToken' }, 401)
+  }
+  const tokens = JSON.parse(cookie) as Tokens
 
   const config = env<{ OAUTH_CLIENT_ID: string; OAUTH_CLIENT_SECRET: string; WG_API_KEY: string }>(
     c,
@@ -73,9 +75,15 @@ app.post('/', zValidator('json', bodySchema), async (c) => {
     })
   }
 
+  setCookie(c, 'jigsawTokens', JSON.stringify(tokens), {
+    domain: '.minecraft.wiki',
+    maxAge: 60 * 60 * 24 * 120,
+    path: '/',
+    sameSite: 'None',
+  })
+
   return c.json({
     message: 'done',
-    tokens: tokens,
   })
 })
 

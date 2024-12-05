@@ -1,6 +1,7 @@
 import { zValidator } from '@hono/zod-validator'
 import { Hono } from 'hono'
 import { env } from 'hono/adapter'
+import { setCookie } from 'hono/cookie'
 import { z } from 'zod'
 
 const app = new Hono()
@@ -36,11 +37,23 @@ app.get('/callback', zValidator('query', querySchema), async (c) => {
     expires_at: number
   }
 
-  return c.json({
-    accessToken: token.access_token,
-    refreshToken: token.refresh_token,
-    expiresAt: Date.now() + token.expires_in * 1000,
-  })
+  setCookie(
+    c,
+    'jigsawTokens',
+    JSON.stringify({
+      accessToken: token.access_token,
+      refreshToken: token.refresh_token,
+      expiresAt: Date.now() + token.expires_in * 1000,
+    }),
+    {
+      domain: '.minecraft.wiki',
+      maxAge: 60 * 60 * 24 * 120,
+      path: '/',
+      sameSite: 'None',
+    },
+  )
+
+  return c.html('<script>window.close()</script>')
 })
 
 export default app
