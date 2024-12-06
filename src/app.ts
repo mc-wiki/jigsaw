@@ -1,7 +1,6 @@
 import { Hono } from 'hono'
 import { env } from 'hono/adapter'
 import { prettyJSON } from 'hono/pretty-json'
-import { cors } from 'hono/cors'
 
 import renderer from './routes/renderer.js'
 import mojira from './routes/mojira.js'
@@ -18,11 +17,10 @@ app.use(async (c, next) => {
   await next()
 })
 
-app.use(
-  cors({
-    origin: '*',
-  }),
-)
+app.use(async (c, next) => {
+  c.res.headers.set('Access-Control-Allow-Origin', '*')
+  await next()
+})
 
 app.get('/', (c) => c.json({ message: '🎉 Hello, World!' }))
 
