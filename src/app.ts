@@ -20,10 +20,12 @@ app.use(async (c, next) => {
 
 app.use(
   cors({
-    origin: (origin) =>
-      origin.startsWith('https://') && origin.endsWith('.minecraft.wiki')
+    origin: (origin) => {
+      console.log(origin)
+      return origin.startsWith('https://') && origin.endsWith('.minecraft.wiki')
         ? origin
-        : 'https://minecraft.wiki',
+        : 'https://minecraft.wiki'
+    },
     credentials: true,
     allowHeaders: ['Authorization', 'Content-Type'],
   }),

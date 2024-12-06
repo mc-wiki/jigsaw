@@ -3,7 +3,6 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { protectedFetch, Tokens } from '../oauth.js'
 import { env } from 'hono/adapter'
-import { getConnInfo } from '@hono/node-server/conninfo'
 import { getCookie, setCookie } from 'hono/cookie'
 import { HTTPException } from 'hono/http-exception'
 
@@ -67,7 +66,7 @@ app.post('/', zValidator('json', bodySchema), async (c) => {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Api-Key ${config.WG_API_KEY}`,
-        'User-Agent': `jigsaw (on behalf of User:${profile.username} from ${getConnInfo(c).remote.address})`,
+        'User-Agent': `jigsaw (on behalf of User:${profile.username} from ${c.req.header('CF-Connecting-IP')})`,
       },
       body: JSON.stringify({
         site: 'minecraft.wiki',
