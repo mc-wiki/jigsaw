@@ -8,22 +8,20 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
-    "@hono/zod-validator": "^0.4.1",
-    "@tsconfig/node20": "^20.1.4",
+    "@hono/zod-validator": "^0.4.2",
     "dotenv": "^16.4.7",
-    "hono": "^4.6.12",
-    "jose": "^5.9.6",
-    "listhen": "^1.9.0",
+    "hono": "^4.6.14",
     "lru-cache": "^11.0.2",
     "tsx": "^4.19.2",
-    "zod": "^3.23.8"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
-    "@types/node": "^22.10.1",
-    "eslint": "^9.16.0",
+    "@eslint/js": "^9.17.0",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.17.0"
+    "typescript-eslint": "^8.18.0"
   }
 }
