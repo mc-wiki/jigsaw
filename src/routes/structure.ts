@@ -12,7 +12,7 @@ const RESOURCE_ID_REGEX = /[a-z0-9/_]+/g
 
 const QUERY_STRUCTURE = z.object({
   id: z.string().regex(RESOURCE_ID_REGEX),
-  variant: z.number().int().min(0).default(0),
+  variant: z.coerce.number().int().min(0).default(0),
 })
 
 type QueryStructure = z.infer<typeof QUERY_STRUCTURE>
@@ -23,7 +23,6 @@ const DATA_REPO_PATH = (id: string) =>
   `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/data/data/minecraft/structure/${id}.nbt`
 
 interface StructureResult {
-  found: boolean
   resolved: boolean
   data?: {
     blocks: Record<string, string>
@@ -31,8 +30,7 @@ interface StructureResult {
   }
 }
 
-const NOT_FOUND_STRUCTURE = { found: false, resolved: false } as StructureResult
-const UNRESOLVED_STRUCTURE = { found: true, resolved: false } as StructureResult
+const UNRESOLVED_STRUCTURE = { resolved: false } as StructureResult
 
 const RESOLVED_CACHE = new LRUCache<string, StructureResult, QueryStructure>({
   max: 2000,
@@ -55,7 +53,7 @@ function nameProvider() {
 async function resolveStructure(query: QueryStructure) {
   const dataSource = DATA_REPO_PATH(query.id)
   const res = await fetch(dataSource)
-  if (res.status !== 200) return NOT_FOUND_STRUCTURE
+  if (res.status !== 200) return UNRESOLVED_STRUCTURE
   const buffer = Buffer.from(new Uint8Array(await res.arrayBuffer()))
   const parsedNBT = ((await nbt.parse(buffer)).parsed as nbt.Compound).value
   const nextAvailableName = nameProvider()
@@ -74,7 +72,6 @@ async function resolveStructure(query: QueryStructure) {
     >[]
   } else {
     if (query.variant !== 0) return UNRESOLVED_STRUCTURE
-    if (!parsedNBT['palette']) return UNRESOLVED_STRUCTURE
     palette = (parsedNBT['palette'] as nbt.List<nbt.TagType.Compound>).value.value
   }
   palette.forEach((v, k) => {
@@ -129,10 +126,8 @@ app.get('/', zValidator('query', QUERY_STRUCTURE), async (ctx) => {
     return ctx.json(resolved, 200, {
       'Cache-Control': 'public, max-age=86400, s-maxage=604800',
     })
-  } else if (resolved && !resolved.found) {
-    return ctx.json(resolved, 404)
   } else {
-    return ctx.json(resolved)
+    return ctx.json(resolved, 404)
   }
 })
 
