@@ -36,6 +36,7 @@ const UNRESOLVED_STRUCTURE = { found: true, resolved: false } as StructureResult
 
 const RESOLVED_CACHE = new LRUCache<string, StructureResult, QueryStructure>({
   max: 2000,
+  ttl: 3600_000,
   fetchMethod: (_key, _stale, { context }) => resolveStructure(context),
 })
 
@@ -124,7 +125,15 @@ async function resolveStructure(query: QueryStructure) {
 app.get('/', zValidator('query', QUERY_STRUCTURE), async (ctx) => {
   const query = ctx.req.valid('query')
   const resolved = await RESOLVED_CACHE.fetch(`${query.id}-${query.variant}`, { context: query })
-  return ctx.json(resolved)
+  if (resolved && resolved.resolved) {
+    return ctx.json(resolved, 200, {
+      'Cache-Control': 'public, max-age=86400, s-maxage=604800',
+    })
+  } else if (resolved && !resolved.found) {
+    return ctx.json(resolved, 404)
+  } else {
+    return ctx.json(resolved)
+  }
 })
 
 export default app
