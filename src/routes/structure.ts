@@ -17,13 +17,14 @@ const QUERY_STRUCTURE = z.object({
 
 type QueryStructure = z.infer<typeof QUERY_STRUCTURE>
 
-// Data Fetching
+// Data Fetching -----------------------------------------------------------------------------------
 
 const DATA_REPO_PATH = (id: string) =>
   `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/data/data/minecraft/structure/${id}.nbt`
 
 interface StructureResult {
   resolved: boolean
+  errorMessage?: string
   data?: {
     blocks: Record<string, string>
     structure: string
@@ -31,6 +32,12 @@ interface StructureResult {
 }
 
 const UNRESOLVED_STRUCTURE = { resolved: false } as StructureResult
+
+const DATA_CACHE = new LRUCache<string, nbt.Compound>({
+  max: 500,
+  ttl: 14400_000,
+  fetchMethod: getDataSource,
+})
 
 const RESOLVED_CACHE = new LRUCache<string, StructureResult, QueryStructure>({
   max: 2000,
@@ -50,72 +57,93 @@ function nameProvider() {
   }
 }
 
-async function resolveStructure(query: QueryStructure) {
-  const dataSource = DATA_REPO_PATH(query.id)
+async function getDataSource(key: string) {
+  const dataSource = DATA_REPO_PATH(key)
   const res = await fetch(dataSource)
-  if (res.status !== 200) return UNRESOLVED_STRUCTURE
+  if (res.status !== 200) return undefined
   const buffer = Buffer.from(new Uint8Array(await res.arrayBuffer()))
-  const parsedNBT = ((await nbt.parse(buffer)).parsed as nbt.Compound).value
-  const nextAvailableName = nameProvider()
-  const stateMapper: Record<string, string> = {}
-  const indexMapper = new Map<number, string>()
-  const size = parsedNBT['size'] as nbt.List<nbt.TagType.Int>
-  const [x, y, z] = size.value.value
-  let palette
-  const palettes = parsedNBT['palettes']
-  if (palettes && palettes.type === nbt.TagType.List) {
-    const paletteList = (palettes as nbt.List<nbt.TagType.List>).value.value
-    if (query.variant >= paletteList.length) return UNRESOLVED_STRUCTURE
-    palette = paletteList[query.variant].value as Record<
-      string,
-      undefined | nbt.Tags[nbt.TagType]
-    >[]
-  } else {
-    if (query.variant !== 0) return UNRESOLVED_STRUCTURE
-    palette = (parsedNBT['palette'] as nbt.List<nbt.TagType.Compound>).value.value
-  }
-  palette.forEach((v, k) => {
-    const name = (v['Name'] as nbt.String).value.split(':', 2)[1]
-    if (name === 'air') {
-      indexMapper.set(k, '+')
-    } else if (name === 'structure_void') {
-      indexMapper.set(k, '-')
+  return (await nbt.parse(buffer)).parsed as nbt.Compound
+}
+
+async function resolveStructure(query: QueryStructure) {
+  try {
+    const parsedNBT = (await DATA_CACHE.fetch(query.id))?.value
+    if (!parsedNBT) return { ...UNRESOLVED_STRUCTURE, errorMessage: 'Source file not found' }
+    const nextAvailableName = nameProvider()
+    const stateMapper: Record<string, string> = {}
+    const indexMapper = new Map<number, string>()
+    const size = parsedNBT['size'] as nbt.List<nbt.TagType.Int>
+    const [x, y, z] = size.value.value
+    let palette
+    const palettes = parsedNBT['palettes']
+    if (palettes && palettes.type === nbt.TagType.List) {
+      const paletteList = (palettes as nbt.List<nbt.TagType.List>).value.value
+      if (query.variant >= paletteList.length)
+        return {
+          ...UNRESOLVED_STRUCTURE,
+          errorMessage: `Variant index ${query.variant} is out of bound`,
+        }
+      palette = paletteList[query.variant].value as Record<
+        string,
+        undefined | nbt.Tags[nbt.TagType]
+      >[]
     } else {
-      const mappedChar = nextAvailableName()
-      indexMapper.set(k, mappedChar)
-      if (v['Properties']) {
-        const properties = (v['Properties'] as nbt.Compound).value
-        const propertiesString = Object.entries(properties)
-          .map((k) => `${k[0]}=${(k[1] as nbt.String).value}`)
-          .sort()
-          .join(',')
-        stateMapper[mappedChar] = `${name}[${propertiesString}]`
-      } else {
-        stateMapper[mappedChar] = name
-      }
+      if (query.variant !== 0)
+        return {
+          ...UNRESOLVED_STRUCTURE,
+          errorMessage: `Variant index ${query.variant} is out of bound`,
+        }
+      palette = (parsedNBT['palette'] as nbt.List<nbt.TagType.Compound>).value.value
     }
-  })
-  const blocks = parsedNBT['blocks'] as nbt.List<nbt.TagType.Compound>
-  const mappedStructure = Array(y)
-    .fill([])
-    .map(() =>
-      Array(z)
-        .fill([])
-        .map(() => Array(x).fill('-') as string[]),
-    )
-  blocks.value.value.forEach((v) => {
-    const [px, py, pz] = (v['pos'] as nbt.List<nbt.TagType.Int>).value.value
-    const state = (v['state'] as nbt.Int).value
-    mappedStructure[py][pz][px] = indexMapper.get(state)!
-  })
-  const structureStr = mappedStructure.map((zp) => zp.map((xp) => xp.join('')).join(',')).join(';')
-  return {
-    found: true,
-    resolved: true,
-    data: {
-      blocks: stateMapper,
-      structure: structureStr,
-    },
+    palette.forEach((v, k) => {
+      const name = (v['Name'] as nbt.String).value.split(':', 2)[1]
+      if (name === 'air') {
+        indexMapper.set(k, '+')
+      } else if (name === 'structure_void') {
+        indexMapper.set(k, '-')
+      } else {
+        const mappedChar = nextAvailableName()
+        indexMapper.set(k, mappedChar)
+        if (v['Properties']) {
+          const properties = (v['Properties'] as nbt.Compound).value
+          const propertiesString = Object.entries(properties)
+            .map((k) => `${k[0]}=${(k[1] as nbt.String).value}`)
+            .sort()
+            .join(',')
+          stateMapper[mappedChar] = `${name}[${propertiesString}]`
+        } else {
+          stateMapper[mappedChar] = name
+        }
+      }
+    })
+    const blocks = parsedNBT['blocks'] as nbt.List<nbt.TagType.Compound>
+    const mappedStructure = Array(y)
+      .fill([])
+      .map(() =>
+        Array(z)
+          .fill([])
+          .map(() => Array(x).fill('-') as string[]),
+      )
+    blocks.value.value.forEach((v) => {
+      const [px, py, pz] = (v['pos'] as nbt.List<nbt.TagType.Int>).value.value
+      const state = (v['state'] as nbt.Int).value
+      mappedStructure[py][pz][px] = indexMapper.get(state)!
+    })
+    const structureStr = mappedStructure
+      .map((zp) => zp.map((xp) => xp.join('')).join(','))
+      .join(';')
+    return {
+      resolved: true,
+      data: {
+        blocks: stateMapper,
+        structure: structureStr,
+      },
+    }
+  } catch (e) {
+    return {
+      ...UNRESOLVED_STRUCTURE,
+      errorMessage: typeof e === 'string' ? e : (e as Error).message,
+    }
   }
 }
 
