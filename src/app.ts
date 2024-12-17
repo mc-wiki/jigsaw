@@ -6,6 +6,7 @@ import renderer from './routes/renderer.js'
 import mojira from './routes/mojira.js'
 import oauth from './routes/oauth.js'
 import purge from './routes/purge.js'
+import structure from './routes/structure.js'
 
 const app = new Hono()
 
@@ -28,5 +29,6 @@ app.route('/renderer', renderer)
 app.route('/mojira', mojira)
 app.route('/oauth', oauth)
 app.route('/purge', purge)
+app.route('/structure', structure)
 
 export default app
