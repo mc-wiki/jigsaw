@@ -2,13 +2,13 @@ import { Hono } from 'hono'
 import { zValidator } from '@hono/zod-validator'
 import { z } from 'zod'
 
-import _blockStateData from '../data/renderer/block_states.json'
-import _blockModelData from '../data/renderer/block_models.json'
-import _textureAtlasData from '../data/renderer/atlas.json'
-import _blockRenderTypeData from '../data/renderer/block_render_type.json'
-import _blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json'
-import _specialBlocksData from '../data/renderer/special.json'
-import _liquidComputationData from '../data/renderer/block_liquid_computation.json'
+import _blockStateData from '../data/renderer/block_states.json' with { type: 'json' }
+import _blockModelData from '../data/renderer/block_models.json' with { type: 'json' }
+import _textureAtlasData from '../data/renderer/atlas.json' with { type: 'json' }
+import _blockRenderTypeData from '../data/renderer/block_render_type.json' with { type: 'json' }
+import _blockOcclusionShapeData from '../data/renderer/block_occlusion_shape.json' with { type: 'json' }
+import _specialBlocksData from '../data/renderer/special.json' with { type: 'json' }
+import _liquidComputationData from '../data/renderer/block_liquid_computation.json' with { type: 'json' }
 import { LRUCache } from 'lru-cache'
 
 const blockStateData = _blockStateData as unknown as Record<string, BlockStateModelCollection>
