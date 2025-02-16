@@ -347,8 +347,9 @@ const RESOLVED_CACHE = new LRUCache<string, ProcessedResponse>({
 
 // Routes ------------------------------------------------------------------------------------------
 
-app.get('/:hash', (ctx) => {
-  const hash = ctx.req.param('hash')
+app.get('/', (ctx) => {
+  const hash = ctx.req.query('key')
+  if (!hash) return ctx.json({ error: 'No key provided' }, 400)
   const response = RESOLVED_CACHE.get(hash)
   if (response)
     return ctx.json(response, 200, {
