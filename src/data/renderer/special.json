@@ -1,1 +1,422 @@
-{"water":[282,971,972],"lava":[852,973],"bell":[974],"ender_chest":[975],"chest":[976,977,978],"trapped_chest":[979,980,981],"decorated_pot":[982,983],"enchanting_table":[984],"lectern":[984],"shulker_box":[985],"white_shulker_box":[986],"orange_shulker_box":[987],"magenta_shulker_box":[988],"light_blue_shulker_box":[989],"yellow_shulker_box":[990],"lime_shulker_box":[991],"pink_shulker_box":[992],"gray_shulker_box":[993],"light_gray_shulker_box":[994],"cyan_shulker_box":[995],"purple_shulker_box":[996],"blue_shulker_box":[997],"brown_shulker_box":[998],"green_shulker_box":[999],"red_shulker_box":[1000],"black_shulker_box":[1001],"white_banner":[1002],"orange_banner":[1002],"magenta_banner":[1002],"light_blue_banner":[1002],"yellow_banner":[1002],"lime_banner":[1002],"pink_banner":[1002],"gray_banner":[1002],"light_gray_banner":[1002],"cyan_banner":[1002],"purple_banner":[1002],"blue_banner":[1002],"brown_banner":[1002],"green_banner":[1002],"red_banner":[1002],"black_banner":[1002],"white_wall_banner":[1002],"orange_wall_banner":[1002],"magenta_wall_banner":[1002],"light_blue_wall_banner":[1002],"yellow_wall_banner":[1002],"lime_wall_banner":[1002],"pink_wall_banner":[1002],"gray_wall_banner":[1002],"light_gray_wall_banner":[1002],"cyan_wall_banner":[1002],"purple_wall_banner":[1002],"blue_wall_banner":[1002],"brown_wall_banner":[1002],"green_wall_banner":[1002],"red_wall_banner":[1002],"black_wall_banner":[1002],"white_bed":[1003],"orange_bed":[1004],"magenta_bed":[1005],"light_blue_bed":[1006],"yellow_bed":[1007],"lime_bed":[1008],"pink_bed":[1009],"gray_bed":[1010],"light_gray_bed":[1011],"cyan_bed":[1012],"purple_bed":[1013],"blue_bed":[1014],"brown_bed":[1015],"green_bed":[1016],"red_bed":[1017],"black_bed":[1018],"oak_sign":[1019],"spruce_sign":[1020],"birch_sign":[1021],"jungle_sign":[1022],"acacia_sign":[1023],"dark_oak_sign":[1024],"mangrove_sign":[1025],"cherry_sign":[1026],"bamboo_sign":[1027],"crimson_sign":[1028],"warped_sign":[1029],"oak_wall_sign":[1019],"spruce_wall_sign":[1020],"birch_wall_sign":[1021],"jungle_wall_sign":[1022],"acacia_wall_sign":[1023],"dark_oak_wall_sign":[1024],"mangrove_wall_sign":[1025],"cherry_wall_sign":[1026],"bamboo_wall_sign":[1027],"crimson_wall_sign":[1028],"warped_wall_sign":[1029],"oak_hanging_sign":[1030],"spruce_hanging_sign":[1031],"birch_hanging_sign":[1032],"jungle_hanging_sign":[1033],"acacia_hanging_sign":[1034],"dark_oak_hanging_sign":[1035],"mangrove_hanging_sign":[1036],"cherry_hanging_sign":[1037],"bamboo_hanging_sign":[1038],"crimson_hanging_sign":[1039],"warped_hanging_sign":[1040],"oak_wall_hanging_sign":[1030],"spruce_wall_hanging_sign":[1031],"birch_wall_hanging_sign":[1032],"jungle_wall_hanging_sign":[1033],"acacia_wall_hanging_sign":[1034],"dark_oak_wall_hanging_sign":[1035],"mangrove_wall_hanging_sign":[1036],"cherry_wall_hanging_sign":[1037],"bamboo_wall_hanging_sign":[1038],"crimson_wall_hanging_sign":[1039],"warped_wall_hanging_sign":[1040],"end_portal":[1041,1042],"end_gateway":[1041,1042],"skeleton_skull":[1043],"wither_skeleton_skull":[1044],"zombie_head":[1045],"player_head":[1046],"creeper_head":[1047],"dragon_head":[1048],"piglin_head":[1049],"skeleton_wall_skull":[1043],"wither_skeleton_wall_skull":[1044],"zombie_wall_head":[1045],"player_wall_head":[1046],"creeper_wall_head":[1047],"dragon_wall_head":[1048],"piglin_wall_head":[1049],"conduit":[1050,1051,1052,1053,1054,1055]}
+{
+  "acacia_hanging_sign": [
+    1233
+  ],
+  "acacia_sign": [
+    466
+  ],
+  "acacia_wall_hanging_sign": [
+    1233
+  ],
+  "acacia_wall_sign": [
+    466
+  ],
+  "bamboo_hanging_sign": [
+    884
+  ],
+  "bamboo_sign": [
+    1599
+  ],
+  "bamboo_wall_hanging_sign": [
+    884
+  ],
+  "bamboo_wall_sign": [
+    1599
+  ],
+  "bell": [
+    495
+  ],
+  "birch_hanging_sign": [
+    372
+  ],
+  "birch_sign": [
+    984
+  ],
+  "birch_wall_hanging_sign": [
+    372
+  ],
+  "birch_wall_sign": [
+    984
+  ],
+  "black_banner": [
+    295
+  ],
+  "black_bed": [
+    297
+  ],
+  "black_shulker_box": [
+    349
+  ],
+  "black_wall_banner": [
+    295
+  ],
+  "blue_banner": [
+    295
+  ],
+  "blue_bed": [
+    1135
+  ],
+  "blue_shulker_box": [
+    384
+  ],
+  "blue_wall_banner": [
+    295
+  ],
+  "brown_banner": [
+    295
+  ],
+  "brown_bed": [
+    1387
+  ],
+  "brown_shulker_box": [
+    1699
+  ],
+  "brown_wall_banner": [
+    295
+  ],
+  "cherry_hanging_sign": [
+    746
+  ],
+  "cherry_sign": [
+    101
+  ],
+  "cherry_wall_hanging_sign": [
+    746
+  ],
+  "cherry_wall_sign": [
+    101
+  ],
+  "chest": [
+    868,
+    1062,
+    663
+  ],
+  "conduit": [
+    647,
+    837,
+    322,
+    1361,
+    1685,
+    353
+  ],
+  "creeper_head": [
+    309
+  ],
+  "creeper_wall_head": [
+    309
+  ],
+  "crimson_hanging_sign": [
+    1113
+  ],
+  "crimson_sign": [
+    800
+  ],
+  "crimson_wall_hanging_sign": [
+    1113
+  ],
+  "crimson_wall_sign": [
+    800
+  ],
+  "cyan_banner": [
+    295
+  ],
+  "cyan_bed": [
+    1566
+  ],
+  "cyan_shulker_box": [
+    642
+  ],
+  "cyan_wall_banner": [
+    295
+  ],
+  "dark_oak_hanging_sign": [
+    1157
+  ],
+  "dark_oak_sign": [
+    1131
+  ],
+  "dark_oak_wall_hanging_sign": [
+    1157
+  ],
+  "dark_oak_wall_sign": [
+    1131
+  ],
+  "decorated_pot": [
+    173,
+    637
+  ],
+  "dragon_head": [
+    935
+  ],
+  "dragon_wall_head": [
+    935
+  ],
+  "enchanting_table": [
+    739
+  ],
+  "end_gateway": [
+    1677,
+    441
+  ],
+  "end_portal": [
+    1677,
+    441
+  ],
+  "ender_chest": [
+    690
+  ],
+  "gray_banner": [
+    295
+  ],
+  "gray_bed": [
+    858
+  ],
+  "gray_shulker_box": [
+    1119
+  ],
+  "gray_wall_banner": [
+    295
+  ],
+  "green_banner": [
+    295
+  ],
+  "green_bed": [
+    561
+  ],
+  "green_shulker_box": [
+    571
+  ],
+  "green_wall_banner": [
+    295
+  ],
+  "jungle_hanging_sign": [
+    1608
+  ],
+  "jungle_sign": [
+    1138
+  ],
+  "jungle_wall_hanging_sign": [
+    1608
+  ],
+  "jungle_wall_sign": [
+    1138
+  ],
+  "lava": [
+    1406,
+    81
+  ],
+  "lectern": [
+    739
+  ],
+  "light_blue_banner": [
+    295
+  ],
+  "light_blue_bed": [
+    1206
+  ],
+  "light_blue_shulker_box": [
+    1108
+  ],
+  "light_blue_wall_banner": [
+    295
+  ],
+  "light_gray_banner": [
+    295
+  ],
+  "light_gray_bed": [
+    33
+  ],
+  "light_gray_shulker_box": [
+    1696
+  ],
+  "light_gray_wall_banner": [
+    295
+  ],
+  "lime_banner": [
+    295
+  ],
+  "lime_bed": [
+    820
+  ],
+  "lime_shulker_box": [
+    1014
+  ],
+  "lime_wall_banner": [
+    295
+  ],
+  "magenta_banner": [
+    295
+  ],
+  "magenta_bed": [
+    625
+  ],
+  "magenta_shulker_box": [
+    1589
+  ],
+  "magenta_wall_banner": [
+    295
+  ],
+  "mangrove_hanging_sign": [
+    499
+  ],
+  "mangrove_sign": [
+    10
+  ],
+  "mangrove_wall_hanging_sign": [
+    499
+  ],
+  "mangrove_wall_sign": [
+    10
+  ],
+  "oak_hanging_sign": [
+    636
+  ],
+  "oak_sign": [
+    983
+  ],
+  "oak_wall_hanging_sign": [
+    636
+  ],
+  "oak_wall_sign": [
+    983
+  ],
+  "orange_banner": [
+    295
+  ],
+  "orange_bed": [
+    1719
+  ],
+  "orange_shulker_box": [
+    1200
+  ],
+  "orange_wall_banner": [
+    295
+  ],
+  "piglin_head": [
+    1722
+  ],
+  "piglin_wall_head": [
+    1722
+  ],
+  "pink_banner": [
+    295
+  ],
+  "pink_bed": [
+    751
+  ],
+  "pink_shulker_box": [
+    1083
+  ],
+  "pink_wall_banner": [
+    295
+  ],
+  "player_head": [
+    138
+  ],
+  "player_wall_head": [
+    138
+  ],
+  "purple_banner": [
+    295
+  ],
+  "purple_bed": [
+    824
+  ],
+  "purple_shulker_box": [
+    1255
+  ],
+  "purple_wall_banner": [
+    295
+  ],
+  "red_banner": [
+    295
+  ],
+  "red_bed": [
+    1588
+  ],
+  "red_shulker_box": [
+    747
+  ],
+  "red_wall_banner": [
+    295
+  ],
+  "shulker_box": [
+    715
+  ],
+  "skeleton_skull": [
+    1109
+  ],
+  "skeleton_wall_skull": [
+    1109
+  ],
+  "spruce_hanging_sign": [
+    28
+  ],
+  "spruce_sign": [
+    206
+  ],
+  "spruce_wall_hanging_sign": [
+    28
+  ],
+  "spruce_wall_sign": [
+    206
+  ],
+  "trapped_chest": [
+    720,
+    540,
+    464
+  ],
+  "warped_hanging_sign": [
+    262
+  ],
+  "warped_sign": [
+    716
+  ],
+  "warped_wall_hanging_sign": [
+    262
+  ],
+  "warped_wall_sign": [
+    716
+  ],
+  "water": [
+    1515,
+    590,
+    1103
+  ],
+  "white_banner": [
+    295
+  ],
+  "white_bed": [
+    243
+  ],
+  "white_shulker_box": [
+    1263
+  ],
+  "white_wall_banner": [
+    295
+  ],
+  "wither_skeleton_skull": [
+    452
+  ],
+  "wither_wall_skeleton_skull": [
+    452
+  ],
+  "yellow_banner": [
+    295
+  ],
+  "yellow_bed": [
+    166
+  ],
+  "yellow_shulker_box": [
+    473
+  ],
+  "yellow_wall_banner": [
+    295
+  ],
+  "zombie_head": [
+    557
+  ],
+  "zombie_wall_head": [
+    557
+  ]
+}
