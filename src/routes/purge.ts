@@ -5,23 +5,11 @@ import { protectedFetch, Tokens } from '../oauth.js'
 import { env } from 'hono/adapter'
 import { getCookie, setCookie } from 'hono/cookie'
 import { HTTPException } from 'hono/http-exception'
-import { cors } from 'hono/cors'
+import originCheck from '../middlewares/originCheck.js'
 
 const app = new Hono()
 
-app.use(
-  cors({
-    origin: (o, c) => {
-      const origin = c.req.query('origin') ?? o
-
-      return origin.startsWith('https://') && origin.endsWith('.minecraft.wiki')
-        ? origin
-        : 'https://minecraft.wiki'
-    },
-    credentials: true,
-    allowHeaders: ['Authorization', 'Content-Type'],
-  }),
-)
+app.use(originCheck)
 
 const bodySchema = z.object({
   urls: z.string().url().array(),

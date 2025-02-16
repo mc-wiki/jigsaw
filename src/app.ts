@@ -7,6 +7,7 @@ import mojira from './routes/mojira.js'
 import oauth from './routes/oauth.js'
 import purge from './routes/purge.js'
 import structure from './routes/structure.js'
+import ip from './routes/ip.js'
 
 const app = new Hono()
 
@@ -30,5 +31,6 @@ app.route('/mojira', mojira)
 app.route('/oauth', oauth)
 app.route('/purge', purge)
 app.route('/structure', structure)
+app.route('/ip', ip)
 
 export default app
