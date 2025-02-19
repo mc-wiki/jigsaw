@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "jigsaw",
+      "script": "pnpm",
+      "args": "start",
+      "interpreter": "/bin/bash"
+    }
+  ]
+}
