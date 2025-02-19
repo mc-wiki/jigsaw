@@ -29,11 +29,9 @@ jobs:
           key: ${{ secrets.TOOLS_SSH_PRIVATE_KEY }}
           request_pty: true
           script: |
-            export PATH="/root/.local/share/fnm:$PATH"
-            eval "`fnm env`"
             cd /opt/jigsaw
             git pull
-            pnpm install
+            ~/.bun/bin/bun install
             pm2 start ecosystem.json
 
       - name: Update deployment status (success)

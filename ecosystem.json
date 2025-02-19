@@ -2,8 +2,8 @@
   "apps": [
     {
       "name": "jigsaw",
-      "script": "pnpm",
-      "args": "start",
+      "script": "bun",
+      "args": "run src/app.ts",
       "interpreter": "/bin/bash"
     }
   ]
