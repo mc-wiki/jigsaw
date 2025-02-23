@@ -33,8 +33,9 @@ jobs:
             eval "`fnm env`"
             cd /opt/jigsaw
             git pull
-            ~/.bun/bin/bun install
-            pm2 start ecosystem.json
+            pnpm install
+            screen -S jigsaw -X quit
+            screen -S jigsaw -d -m pnpm start
 
       - name: Update deployment status (success)
         if: success()
