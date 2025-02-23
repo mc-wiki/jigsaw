@@ -29,6 +29,8 @@ jobs:
           key: ${{ secrets.TOOLS_SSH_PRIVATE_KEY }}
           request_pty: true
           script: |
+            export PATH="/root/.local/share/fnm:$PATH"
+            eval "`fnm env`"
             cd /opt/jigsaw
             git pull
             ~/.bun/bin/bun install

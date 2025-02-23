@@ -3,7 +3,7 @@
     {
       "name": "jigsaw",
       "script": "bun",
-      "args": "run src/app.ts",
+      "args": "run src/app.ts --env-file=.env",
       "interpreter": "/bin/bash"
     }
   ]
