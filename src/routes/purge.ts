@@ -53,7 +53,7 @@ app.post('/', zValidator('json', bodySchema), async (c) => {
     'staff',
   ]
 
-  if (!allowedGroups.some((group) => profile.groups.includes(group))) {
+  if (!allowedGroups.some((group) => profile.groups.includes(group)) && !profile.blocked) {
     return c.json({ message: 'insufficientPermission' }, 403)
   }
 

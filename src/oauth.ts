@@ -77,6 +77,6 @@ export async function refreshTokens(
   return {
     accessToken: newTokens.access_token,
     refreshToken: newTokens.refresh_token,
-    expiresAt: Date.now() + newTokens.expires_in * 1000,
+    expiresAt: newTokens.expires_at,
   }
 }

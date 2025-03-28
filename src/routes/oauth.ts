@@ -43,7 +43,7 @@ app.get('/callback', zValidator('query', querySchema), async (c) => {
     JSON.stringify({
       accessToken: token.access_token,
       refreshToken: token.refresh_token,
-      expiresAt: Date.now() + token.expires_in * 1000,
+      expiresAt: token.expires_at,
     }),
     {
       domain: '.minecraft.wiki',
