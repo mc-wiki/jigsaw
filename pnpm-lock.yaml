@@ -13,10 +13,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.14.0
-        version: 1.14.0(hono@4.7.5)
+        version: 1.14.0(hono@4.9.7)
       '@hono/zod-validator':
         specifier: ^0.4.3
-        version: 0.4.3(hono@4.7.5)(zod@3.24.2)
+        version: 0.4.3(hono@4.9.7)(zod@3.24.2)
       cloudflare:
         specifier: ^4.2.0
         version: 4.2.0
@@ -24,8 +24,8 @@ importers:
         specifier: ^16.4.7
         version: 16.4.7
       hono:
-        specifier: ^4.7.5
-        version: 4.7.5
+        specifier: ^4.9.7
+        version: 4.9.7
       lru-cache:
         specifier: ^11.1.0
         version: 11.1.0
@@ -657,8 +657,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.7.5:
-    resolution: {integrity: sha512-fDOK5W2C1vZACsgLONigdZTRZxuBqFtcKh7bUQ5cVSbwI2RWjloJDcgFOVzbQrlI6pCmhlTsVYZ7zpLj4m4qMQ==}
+  hono@4.9.7:
+    resolution: {integrity: sha512-t4Te6ERzIaC48W3x4hJmBwgNlLhmiEdEE5ViYb02ffw4ignHNHa5IBtPjmbKstmtKa8X6C35iWwK4HaqvrzG9w==}
     engines: {node: '>=16.9.0'}
 
   humanize-ms@1.2.1:
@@ -724,6 +724,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -771,6 +772,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -1083,13 +1085,13 @@ snapshots:
       '@eslint/core': 0.12.0
       levn: 0.4.1
 
-  '@hono/node-server@1.14.0(hono@4.7.5)':
+  '@hono/node-server@1.14.0(hono@4.9.7)':
     dependencies:
-      hono: 4.7.5
+      hono: 4.9.7
 
-  '@hono/zod-validator@0.4.3(hono@4.7.5)(zod@3.24.2)':
+  '@hono/zod-validator@0.4.3(hono@4.9.7)(zod@3.24.2)':
     dependencies:
-      hono: 4.7.5
+      hono: 4.9.7
       zod: 3.24.2
 
   '@humanfs/core@0.19.1': {}
@@ -1549,7 +1551,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.7.5: {}
+  hono@4.9.7: {}
 
   humanize-ms@1.2.1:
     dependencies:
