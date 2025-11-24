@@ -7,24 +7,24 @@
     "lint": "eslint . --ext .ts,.js"
   },
   "dependencies": {
-    "@hono/node-server": "^1.14.0",
-    "@hono/zod-validator": "^0.4.3",
-    "cloudflare": "^4.2.0",
-    "dotenv": "^16.4.7",
-    "hono": "^4.10.3",
-    "lru-cache": "^11.1.0",
+    "@hono/node-server": "^1.19.6",
+    "@hono/zod-validator": "^0.7.5",
+    "cloudflare": "^5.2.0",
+    "dotenv": "^17.2.3",
+    "hono": "^4.10.6",
+    "lru-cache": "^11.2.2",
     "prismarine-nbt": "^2.7.0",
-    "tsx": "^4.19.3",
-    "zod": "^3.24.2"
+    "tsx": "^4.20.6",
+    "zod": "^4.1.13"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
-    "@tsconfig/node22": "^22.0.1",
-    "@types/node": "^22.13.14",
-    "eslint": "^9.23.0",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.28.0"
+    "@eslint/js": "^9.39.1",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.47.0"
   },
   "pnpm": {
     "overrides": {
