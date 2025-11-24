@@ -12,7 +12,7 @@ const app = new Hono()
 app.use(originCheck)
 
 const bodySchema = z.object({
-  urls: z.string().url().array(),
+  urls: z.url().array(),
 })
 
 app.post('/', zValidator('json', bodySchema), async (c) => {
