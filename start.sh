@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH="$HOME/.local/share/pnpm:$PATH"
+eval "$(fnm env --use-on-cd --shell bash)"
 
 pnpm install
 pnpm run start
