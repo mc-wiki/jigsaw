@@ -30,13 +30,10 @@ jobs:
           key: ${{ secrets.TOOLS_SSH_PRIVATE_KEY }}
           request_pty: true
           script: |
-            export PATH="/root/.local/share/fnm:$PATH"
-            eval "`fnm env`"
             cd /opt/jigsaw
+            git checkout .
             git pull
-            pnpm install
-            screen -S jigsaw -X quit
-            screen -S jigsaw -d -m pnpm start
+            service jigsaw restart
 
       - name: Update deployment status (success)
         if: success()
