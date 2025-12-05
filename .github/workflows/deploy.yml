@@ -33,6 +33,7 @@ jobs:
             cd /opt/jigsaw
             git checkout .
             git pull
+            chmod +x ./start.sh
             service jigsaw restart
 
       - name: Update deployment status (success)
