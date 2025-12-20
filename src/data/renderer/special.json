@@ -1,422 +1,462 @@
 {
   "acacia_hanging_sign": [
-    1233
+    753
   ],
   "acacia_sign": [
-    466
+    134
   ],
   "acacia_wall_hanging_sign": [
-    1233
+    753
   ],
   "acacia_wall_sign": [
-    466
+    134
   ],
   "bamboo_hanging_sign": [
-    884
+    239
   ],
   "bamboo_sign": [
-    1599
+    742
   ],
   "bamboo_wall_hanging_sign": [
-    884
+    239
   ],
   "bamboo_wall_sign": [
-    1599
+    742
   ],
   "bell": [
-    495
+    553
   ],
   "birch_hanging_sign": [
-    372
+    685
   ],
   "birch_sign": [
-    984
+    919
   ],
   "birch_wall_hanging_sign": [
-    372
+    685
   ],
   "birch_wall_sign": [
-    984
+    919
   ],
   "black_banner": [
-    295
+    788
   ],
   "black_bed": [
-    297
+    717
   ],
   "black_shulker_box": [
-    349
+    1743
   ],
   "black_wall_banner": [
-    295
+    788
   ],
   "blue_banner": [
-    295
+    788
   ],
   "blue_bed": [
-    1135
+    1524
   ],
   "blue_shulker_box": [
-    384
+    1595
   ],
   "blue_wall_banner": [
-    295
+    788
   ],
   "brown_banner": [
-    295
+    788
   ],
   "brown_bed": [
-    1387
+    38
   ],
   "brown_shulker_box": [
-    1699
+    1178
   ],
   "brown_wall_banner": [
-    295
+    788
   ],
   "cherry_hanging_sign": [
-    746
+    778
   ],
   "cherry_sign": [
-    101
+    1297
   ],
   "cherry_wall_hanging_sign": [
-    746
+    778
   ],
   "cherry_wall_sign": [
-    101
+    1297
   ],
   "chest": [
-    868,
-    1062,
-    663
+    667,
+    999,
+    402
   ],
   "conduit": [
-    647,
-    837,
-    322,
-    1361,
-    1685,
-    353
+    467,
+    671,
+    1753,
+    1182,
+    497,
+    626
+  ],
+  "copper_chest": [
+    357,
+    449,
+    1152
   ],
   "creeper_head": [
-    309
+    226
   ],
   "creeper_wall_head": [
-    309
+    226
   ],
   "crimson_hanging_sign": [
-    1113
+    1287
   ],
   "crimson_sign": [
-    800
+    1599
   ],
   "crimson_wall_hanging_sign": [
-    1113
+    1287
   ],
   "crimson_wall_sign": [
-    800
+    1599
   ],
   "cyan_banner": [
-    295
+    788
   ],
   "cyan_bed": [
-    1566
+    45
   ],
   "cyan_shulker_box": [
-    642
+    1610
   ],
   "cyan_wall_banner": [
-    295
+    788
   ],
   "dark_oak_hanging_sign": [
-    1157
+    906
   ],
   "dark_oak_sign": [
-    1131
+    4
   ],
   "dark_oak_wall_hanging_sign": [
-    1157
+    906
   ],
   "dark_oak_wall_sign": [
-    1131
+    4
   ],
   "decorated_pot": [
-    173,
-    637
+    787,
+    1600
   ],
   "dragon_head": [
-    935
+    1598
   ],
   "dragon_wall_head": [
-    935
+    1598
   ],
   "enchanting_table": [
-    739
+    981
   ],
   "end_gateway": [
-    1677,
-    441
+    1710,
+    530
   ],
   "end_portal": [
-    1677,
-    441
+    1710,
+    530
   ],
   "ender_chest": [
-    690
+    1584
+  ],
+  "exposed_copper_chest": [
+    1143,
+    238,
+    3
   ],
   "gray_banner": [
-    295
+    788
   ],
   "gray_bed": [
-    858
+    638
   ],
   "gray_shulker_box": [
-    1119
+    504
   ],
   "gray_wall_banner": [
-    295
+    788
   ],
   "green_banner": [
-    295
+    788
   ],
   "green_bed": [
-    561
+    920
   ],
   "green_shulker_box": [
-    571
-  ],
-  "green_wall_banner": [
-    295
-  ],
-  "jungle_hanging_sign": [
-    1608
-  ],
-  "jungle_sign": [
-    1138
-  ],
-  "jungle_wall_hanging_sign": [
-    1608
-  ],
-  "jungle_wall_sign": [
-    1138
-  ],
-  "lava": [
-    1406,
-    81
-  ],
-  "lectern": [
-    739
-  ],
-  "light_blue_banner": [
-    295
-  ],
-  "light_blue_bed": [
-    1206
-  ],
-  "light_blue_shulker_box": [
-    1108
-  ],
-  "light_blue_wall_banner": [
-    295
-  ],
-  "light_gray_banner": [
-    295
-  ],
-  "light_gray_bed": [
-    33
-  ],
-  "light_gray_shulker_box": [
-    1696
-  ],
-  "light_gray_wall_banner": [
-    295
-  ],
-  "lime_banner": [
-    295
-  ],
-  "lime_bed": [
-    820
-  ],
-  "lime_shulker_box": [
-    1014
-  ],
-  "lime_wall_banner": [
-    295
-  ],
-  "magenta_banner": [
-    295
-  ],
-  "magenta_bed": [
     625
   ],
+  "green_wall_banner": [
+    788
+  ],
+  "jungle_hanging_sign": [
+    230
+  ],
+  "jungle_sign": [
+    569
+  ],
+  "jungle_wall_hanging_sign": [
+    230
+  ],
+  "jungle_wall_sign": [
+    569
+  ],
+  "lava": [
+    1635,
+    536
+  ],
+  "lectern": [
+    981
+  ],
+  "light_blue_banner": [
+    788
+  ],
+  "light_blue_bed": [
+    1700
+  ],
+  "light_blue_shulker_box": [
+    677
+  ],
+  "light_blue_wall_banner": [
+    788
+  ],
+  "light_gray_banner": [
+    788
+  ],
+  "light_gray_bed": [
+    5
+  ],
+  "light_gray_shulker_box": [
+    1302
+  ],
+  "light_gray_wall_banner": [
+    788
+  ],
+  "lime_banner": [
+    788
+  ],
+  "lime_bed": [
+    777
+  ],
+  "lime_shulker_box": [
+    129
+  ],
+  "lime_wall_banner": [
+    788
+  ],
+  "magenta_banner": [
+    788
+  ],
+  "magenta_bed": [
+    716
+  ],
   "magenta_shulker_box": [
-    1589
+    1776
   ],
   "magenta_wall_banner": [
-    295
+    788
   ],
   "mangrove_hanging_sign": [
-    499
+    710
   ],
   "mangrove_sign": [
-    10
+    1572
   ],
   "mangrove_wall_hanging_sign": [
-    499
+    710
   ],
   "mangrove_wall_sign": [
-    10
+    1572
   ],
   "oak_hanging_sign": [
-    636
-  ],
-  "oak_sign": [
-    983
-  ],
-  "oak_wall_hanging_sign": [
-    636
-  ],
-  "oak_wall_sign": [
-    983
-  ],
-  "orange_banner": [
-    295
-  ],
-  "orange_bed": [
-    1719
-  ],
-  "orange_shulker_box": [
-    1200
-  ],
-  "orange_wall_banner": [
-    295
-  ],
-  "piglin_head": [
-    1722
-  ],
-  "piglin_wall_head": [
-    1722
-  ],
-  "pink_banner": [
-    295
-  ],
-  "pink_bed": [
-    751
-  ],
-  "pink_shulker_box": [
-    1083
-  ],
-  "pink_wall_banner": [
-    295
-  ],
-  "player_head": [
-    138
-  ],
-  "player_wall_head": [
-    138
-  ],
-  "purple_banner": [
-    295
-  ],
-  "purple_bed": [
-    824
-  ],
-  "purple_shulker_box": [
-    1255
-  ],
-  "purple_wall_banner": [
-    295
-  ],
-  "red_banner": [
-    295
-  ],
-  "red_bed": [
-    1588
-  ],
-  "red_shulker_box": [
     747
   ],
+  "oak_sign": [
+    998
+  ],
+  "oak_wall_hanging_sign": [
+    747
+  ],
+  "oak_wall_sign": [
+    998
+  ],
+  "orange_banner": [
+    788
+  ],
+  "orange_bed": [
+    490
+  ],
+  "orange_shulker_box": [
+    1693
+  ],
+  "orange_wall_banner": [
+    788
+  ],
+  "oxidized_copper_chest": [
+    1742,
+    1508,
+    245
+  ],
+  "piglin_head": [
+    921
+  ],
+  "piglin_wall_head": [
+    921
+  ],
+  "pink_banner": [
+    788
+  ],
+  "pink_bed": [
+    1018
+  ],
+  "pink_shulker_box": [
+    96
+  ],
+  "pink_wall_banner": [
+    788
+  ],
+  "player_head": [
+    76
+  ],
+  "player_wall_head": [
+    76
+  ],
+  "purple_banner": [
+    788
+  ],
+  "purple_bed": [
+    518
+  ],
+  "purple_shulker_box": [
+    526
+  ],
+  "purple_wall_banner": [
+    788
+  ],
+  "red_banner": [
+    788
+  ],
+  "red_bed": [
+    709
+  ],
+  "red_shulker_box": [
+    1290
+  ],
   "red_wall_banner": [
-    295
+    788
   ],
   "shulker_box": [
-    715
+    645
   ],
   "skeleton_skull": [
-    1109
+    1179
   ],
   "skeleton_wall_skull": [
-    1109
+    1179
   ],
   "spruce_hanging_sign": [
-    28
+    1298
   ],
   "spruce_sign": [
-    206
+    48
   ],
   "spruce_wall_hanging_sign": [
-    28
+    1298
   ],
   "spruce_wall_sign": [
-    206
+    48
   ],
   "trapped_chest": [
-    720,
-    540,
-    464
+    1141,
+    137,
+    1161
   ],
   "warped_hanging_sign": [
-    262
+    736
   ],
   "warped_sign": [
-    716
+    1671
   ],
   "warped_wall_hanging_sign": [
-    262
+    736
   ],
   "warped_wall_sign": [
-    716
+    1671
   ],
   "water": [
-    1515,
-    590,
-    1103
+    792,
+    281,
+    188
+  ],
+  "waxed_copper_chest": [
+    357,
+    449,
+    1152
+  ],
+  "waxed_exposed_copper_chest": [
+    1143,
+    238,
+    3
+  ],
+  "waxed_oxidized_copper_chest ": [
+    1742,
+    1508,
+    245
+  ],
+  "waxed_weathered_copper_chest": [
+    104,
+    1101,
+    336
+  ],
+  "weathered_copper_chest": [
+    104,
+    1101,
+    336
   ],
   "white_banner": [
-    295
+    788
   ],
   "white_bed": [
-    243
+    360
   ],
   "white_shulker_box": [
-    1263
+    1346
   ],
   "white_wall_banner": [
-    295
+    788
   ],
   "wither_skeleton_skull": [
-    452
+    181
   ],
   "wither_wall_skeleton_skull": [
-    452
+    181
   ],
   "yellow_banner": [
-    295
+    788
   ],
   "yellow_bed": [
-    166
+    700
   ],
   "yellow_shulker_box": [
-    473
+    644
   ],
   "yellow_wall_banner": [
-    295
+    788
   ],
   "zombie_head": [
-    557
+    1820
   ],
   "zombie_wall_head": [
-    557
+    1820
   ]
 }
