@@ -915,6 +915,198 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
+    "acacia_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "acacia_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
     "acacia_sign[rotation=0]": {
         "blocks_motion": true,
         "face_sturdy": []
@@ -3935,6 +4127,198 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
+    "bamboo_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "bamboo_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
     "bamboo_sign[rotation=0]": {
         "blocks_motion": true,
         "face_sturdy": []
@@ -6391,6 +6775,198 @@
     "birch_sapling[stage=1]": {
         "blocks_motion": false,
         "face_sturdy": []
+    },
+    "birch_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "birch_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "birch_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "birch_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "birch_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
     },
     "birch_sign[rotation=0]": {
         "blocks_motion": true,
@@ -12883,18 +13459,6 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
-    "chain[axis=x]": {
-        "blocks_motion": true,
-        "face_sturdy": []
-    },
-    "chain[axis=y]": {
-        "blocks_motion": true,
-        "face_sturdy": []
-    },
-    "chain[axis=z]": {
-        "blocks_motion": true,
-        "face_sturdy": []
-    },
     "chain_command_block[conditional=false,facing=down]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -13942,6 +14506,198 @@
     "cherry_sapling[stage=1]": {
         "blocks_motion": false,
         "face_sturdy": []
+    },
+    "cherry_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "cherry_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
     },
     "cherry_sign[rotation=0]": {
         "blocks_motion": true,
@@ -20194,6 +20950,70 @@
         "blocks_motion": true,
         "face_sturdy": []
     },
+    "copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "copper_block": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -20248,6 +21068,66 @@
             "up",
             "west"
         ]
+    },
+    "copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -20633,6 +21513,70 @@
             "north"
         ]
     },
+    "copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -20644,6 +21588,14 @@
             "west"
         ]
     },
+    "copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "copper_ore": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -20654,6 +21606,10 @@
             "up",
             "west"
         ]
+    },
+    "copper_torch": {
+        "blocks_motion": false,
+        "face_sturdy": []
     },
     "copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -20846,6 +21802,22 @@
         "face_sturdy": [
             "east"
         ]
+    },
+    "copper_wall_torch[facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_wall_torch[facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_wall_torch[facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "copper_wall_torch[facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
     },
     "cornflower": {
         "blocks_motion": false,
@@ -22673,6 +23645,198 @@
     "crimson_roots": {
         "blocks_motion": false,
         "face_sturdy": []
+    },
+    "crimson_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "crimson_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
     },
     "crimson_sign[rotation=0]": {
         "blocks_motion": true,
@@ -25045,6 +26209,198 @@
     "dark_oak_sapling[stage=1]": {
         "blocks_motion": false,
         "face_sturdy": []
+    },
+    "dark_oak_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "dark_oak_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
     },
     "dark_oak_sign[rotation=0]": {
         "blocks_motion": true,
@@ -29788,6 +31144,70 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
+    "dried_ghast[facing=east,hydration=0]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=east,hydration=1]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=east,hydration=2]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=east,hydration=3]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=north,hydration=0]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=north,hydration=1]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=north,hydration=2]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=north,hydration=3]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=south,hydration=0]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=south,hydration=1]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=south,hydration=2]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=south,hydration=3]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=west,hydration=0]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=west,hydration=1]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=west,hydration=2]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "dried_ghast[facing=west,hydration=3]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "dried_kelp_block": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -31061,6 +32481,70 @@
             "west"
         ]
     },
+    "exposed_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "exposed_copper_bulb[lit=false,powered=false]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -31104,6 +32588,66 @@
             "up",
             "west"
         ]
+    },
+    "exposed_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "exposed_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -31489,6 +33033,70 @@
             "north"
         ]
     },
+    "exposed_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "exposed_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "exposed_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -31499,6 +33107,14 @@
             "up",
             "west"
         ]
+    },
+    "exposed_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "exposed_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -32005,6 +33621,54 @@
             "up",
             "west"
         ]
+    },
+    "exposed_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "exposed_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "farmland[moisture=0]": {
         "blocks_motion": true,
@@ -36994,6 +38658,18 @@
             "west"
         ]
     },
+    "iron_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "iron_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "iron_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "iron_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -38694,6 +40370,198 @@
     "jungle_sapling[stage=1]": {
         "blocks_motion": false,
         "face_sturdy": []
+    },
+    "jungle_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "jungle_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
     },
     "jungle_sign[rotation=0]": {
         "blocks_motion": true,
@@ -42768,6 +44636,198 @@
             "south",
             "up",
             "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "mangrove_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
         ]
     },
     "mangrove_sign[rotation=0]": {
@@ -61857,6 +63917,198 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
+    "oak_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "oak_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "oak_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "oak_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "oak_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
     "oak_sign[rotation=0]": {
         "blocks_motion": true,
         "face_sturdy": []
@@ -63110,6 +65362,70 @@
             "west"
         ]
     },
+    "oxidized_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "oxidized_copper_bulb[lit=false,powered=false]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -63153,6 +65469,66 @@
             "up",
             "west"
         ]
+    },
+    "oxidized_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "oxidized_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -63538,6 +65914,70 @@
             "north"
         ]
     },
+    "oxidized_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "oxidized_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "oxidized_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -63548,6 +65988,14 @@
             "up",
             "west"
         ]
+    },
+    "oxidized_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "oxidized_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -64054,6 +66502,54 @@
             "up",
             "west"
         ]
+    },
+    "oxidized_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "oxidized_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "packed_ice": {
         "blocks_motion": true,
@@ -65821,6 +68317,198 @@
     "pale_oak_sapling[stage=1]": {
         "blocks_motion": false,
         "face_sturdy": []
+    },
+    "pale_oak_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "pale_oak_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
     },
     "pale_oak_sign[rotation=0]": {
         "blocks_motion": true,
@@ -89806,6 +92494,198 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
+    "spruce_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "spruce_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
     "spruce_sign[rotation=0]": {
         "blocks_motion": true,
         "face_sturdy": []
@@ -97505,6 +100385,198 @@
         "blocks_motion": false,
         "face_sturdy": []
     },
+    "warped_shelf[facing=east,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=east,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "west"
+        ]
+    },
+    "warped_shelf[facing=north,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=north,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "south"
+        ]
+    },
+    "warped_shelf[facing=south,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=south,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "north"
+        ]
+    },
+    "warped_shelf[facing=west,powered=false,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=false,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=false,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=false,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=true,side_chain=center]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=true,side_chain=left]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=true,side_chain=right]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
+    "warped_shelf[facing=west,powered=true,side_chain=unconnected]": {
+        "blocks_motion": true,
+        "face_sturdy": [
+            "east"
+        ]
+    },
     "warped_sign[rotation=0]": {
         "blocks_motion": true,
         "face_sturdy": []
@@ -98227,6 +101299,70 @@
             "west"
         ]
     },
+    "waxed_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "waxed_copper_block": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -98281,6 +101417,66 @@
             "up",
             "west"
         ]
+    },
+    "waxed_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -98666,6 +101862,70 @@
             "north"
         ]
     },
+    "waxed_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "waxed_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -98676,6 +101936,14 @@
             "up",
             "west"
         ]
+    },
+    "waxed_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -99205,6 +102473,70 @@
             "west"
         ]
     },
+    "waxed_exposed_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "waxed_exposed_copper_bulb[lit=false,powered=false]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -99248,6 +102580,66 @@
             "up",
             "west"
         ]
+    },
+    "waxed_exposed_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_exposed_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -99633,6 +103025,70 @@
             "north"
         ]
     },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "waxed_exposed_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -99643,6 +103099,14 @@
             "up",
             "west"
         ]
+    },
+    "waxed_exposed_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_exposed_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -100150,6 +103614,102 @@
             "west"
         ]
     },
+    "waxed_exposed_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_exposed_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "waxed_oxidized_chiseled_copper": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -100171,6 +103731,70 @@
             "up",
             "west"
         ]
+    },
+    "waxed_oxidized_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_oxidized_copper_bulb[lit=false,powered=false]": {
         "blocks_motion": true,
@@ -100215,6 +103839,66 @@
             "up",
             "west"
         ]
+    },
+    "waxed_oxidized_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_oxidized_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -100600,6 +104284,70 @@
             "north"
         ]
     },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "waxed_oxidized_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -100610,6 +104358,14 @@
             "up",
             "west"
         ]
+    },
+    "waxed_oxidized_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_oxidized_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -101117,6 +104873,54 @@
             "west"
         ]
     },
+    "waxed_oxidized_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_oxidized_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "waxed_weathered_chiseled_copper": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -101138,6 +104942,70 @@
             "up",
             "west"
         ]
+    },
+    "waxed_weathered_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_weathered_copper_bulb[lit=false,powered=false]": {
         "blocks_motion": true,
@@ -101182,6 +105050,66 @@
             "up",
             "west"
         ]
+    },
+    "waxed_weathered_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_weathered_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -101567,6 +105495,70 @@
             "north"
         ]
     },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "waxed_weathered_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -101577,6 +105569,14 @@
             "up",
             "west"
         ]
+    },
+    "waxed_weathered_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "waxed_weathered_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -102084,6 +106084,54 @@
             "west"
         ]
     },
+    "waxed_weathered_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "waxed_weathered_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
     "weathered_chiseled_copper": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -102105,6 +106153,70 @@
             "up",
             "west"
         ]
+    },
+    "weathered_copper_bars[east=false,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=false,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=false,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=false,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=false,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=false,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=true,south=false,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=true,south=false,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=true,south=true,west=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_bars[east=true,north=true,south=true,west=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "weathered_copper_bulb[lit=false,powered=false]": {
         "blocks_motion": true,
@@ -102149,6 +106261,66 @@
             "up",
             "west"
         ]
+    },
+    "weathered_copper_chain[axis=x]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chain[axis=y]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chain[axis=z]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=east,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=east,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=east,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=north,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=north,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=north,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=south,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=south,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=south,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=west,type=left]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=west,type=right]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_chest[facing=west,type=single]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "weathered_copper_door[facing=east,half=lower,hinge=left,open=false,powered=false]": {
         "blocks_motion": true,
@@ -102534,6 +106706,70 @@
             "north"
         ]
     },
+    "weathered_copper_golem_statue[copper_golem_pose=running,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=running,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=running,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=running,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=sitting,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=sitting,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=sitting,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=sitting,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=standing,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=standing,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=standing,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=standing,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=star,facing=east]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=star,facing=north]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=star,facing=south]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
+    "weathered_copper_golem_statue[copper_golem_pose=star,facing=west]": {
+        "blocks_motion": false,
+        "face_sturdy": []
+    },
     "weathered_copper_grate[]": {
         "blocks_motion": true,
         "face_sturdy": [
@@ -102544,6 +106780,14 @@
             "up",
             "west"
         ]
+    },
+    "weathered_copper_lantern[hanging=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_copper_lantern[hanging=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "weathered_copper_trapdoor[facing=east,half=bottom,open=false,powered=false]": {
         "blocks_motion": true,
@@ -103050,6 +107294,54 @@
             "up",
             "west"
         ]
+    },
+    "weathered_lightning_rod[facing=down,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=down,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=east,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=east,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=north,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=north,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=south,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=south,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=up,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=up,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=west,powered=false]": {
+        "blocks_motion": true,
+        "face_sturdy": []
+    },
+    "weathered_lightning_rod[facing=west,powered=true]": {
+        "blocks_motion": true,
+        "face_sturdy": []
     },
     "weeping_vines[age=0]": {
         "blocks_motion": false,

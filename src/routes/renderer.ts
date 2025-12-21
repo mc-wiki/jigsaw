@@ -31,7 +31,7 @@ const app = new Hono()
 
 const BlockState = z.object({
   name: z.string(),
-  properties: z.record(z.string()).optional(),
+  properties: z.record(z.string(), z.string()).optional(),
 })
 type BlockState = z.infer<typeof BlockState>
 
