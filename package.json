@@ -11,7 +11,7 @@
     "@hono/zod-validator": "^0.7.5",
     "cloudflare": "^5.2.0",
     "dotenv": "^17.2.3",
-    "hono": "^4.10.6",
+    "hono": "^4.11.4",
     "lru-cache": "^11.2.2",
     "prismarine-nbt": "^2.7.0",
     "tsx": "^4.20.6",
