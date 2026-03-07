@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.19.6
-        version: 1.19.6(hono@4.12.4)
+        specifier: ^1.19.10
+        version: 1.19.10(hono@4.12.4)
       '@hono/zod-validator':
         specifier: ^0.7.5
         version: 0.7.5(hono@4.12.4)(zod@4.1.13)
@@ -257,8 +257,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@hono/node-server@1.19.6':
-    resolution: {integrity: sha512-Shz/KjlIeAhfiuE93NDKVdZ7HdBVLQAfdbaXEaoAVO3ic9ibRSLGIQGkcBbFyuLr+7/1D5ZCINM8B+6IvXeMtw==}
+  '@hono/node-server@1.19.10':
+    resolution: {integrity: sha512-hZ7nOssGqRgyV3FVVQdfi+U4q02uB23bpnYpdvNXkYTRRyWx84b7yf1ans+dnJ/7h41sGL3CeQTfO+ZGxuO+Iw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -1088,7 +1088,7 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hono/node-server@1.19.6(hono@4.12.4)':
+  '@hono/node-server@1.19.10(hono@4.12.4)':
     dependencies:
       hono: 4.12.4
 
