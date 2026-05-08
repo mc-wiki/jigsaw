@@ -13,10 +13,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.13
-        version: 1.19.13(hono@4.12.14)
+        version: 1.19.13(hono@4.12.16)
       '@hono/zod-validator':
         specifier: ^0.7.5
-        version: 0.7.5(hono@4.12.14)(zod@4.1.13)
+        version: 0.7.5(hono@4.12.16)(zod@4.1.13)
       cloudflare:
         specifier: ^5.2.0
         version: 5.2.0
@@ -24,8 +24,8 @@ importers:
         specifier: ^17.2.3
         version: 17.2.3
       hono:
-        specifier: ^4.12.14
-        version: 4.12.14
+        specifier: ^4.12.16
+        version: 4.12.16
       lru-cache:
         specifier: ^11.2.2
         version: 11.2.2
@@ -656,8 +656,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.12.14:
-    resolution: {integrity: sha512-am5zfg3yu6sqn5yjKBNqhnTX7Cv+m00ox+7jbaKkrLMRJ4rAdldd1xPd/JzbBWspqaQv6RSTrgFN95EsfhC+7w==}
+  hono@4.12.16:
+    resolution: {integrity: sha512-jN0ZewiNAWSe5khM3EyCmBb250+b40wWbwNILNfEvq84VREWwOIkuUsFONk/3i3nqkz7Oe1PcpM2mwQEK2L9Kg==}
     engines: {node: '>=16.9.0'}
 
   humanize-ms@1.2.1:
@@ -1088,13 +1088,13 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hono/node-server@1.19.13(hono@4.12.14)':
+  '@hono/node-server@1.19.13(hono@4.12.16)':
     dependencies:
-      hono: 4.12.14
+      hono: 4.12.16
 
-  '@hono/zod-validator@0.7.5(hono@4.12.14)(zod@4.1.13)':
+  '@hono/zod-validator@0.7.5(hono@4.12.16)(zod@4.1.13)':
     dependencies:
-      hono: 4.12.14
+      hono: 4.12.16
       zod: 4.1.13
 
   '@humanfs/core@0.19.1': {}
@@ -1565,7 +1565,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.12.14: {}
+  hono@4.12.16: {}
 
   humanize-ms@1.2.1:
     dependencies:
