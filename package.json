@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .ts,.js"
   },
   "dependencies": {
-    "@hono/node-server": "^1.19.13",
+    "@hono/node-server": "^2.0.10",
     "@hono/zod-validator": "^0.7.5",
     "cloudflare": "^5.2.0",
     "dotenv": "^17.2.3",
